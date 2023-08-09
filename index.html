@@ -18,19 +18,29 @@
 <textarea markdown hidden>
 
 <h1>TODO:</h1>
-* Fix double quotes (either italics or bendy quotes)
-* Prettier examples with <tt>&amp;lt;br&amp;gt;</tt>
-* Duplicate paragraph with "“Timestamps”" ?
+* Move punctuation inside example phrases (e.g. `}!` → `!}`).
+* Prettier examples with `<br>`. Surround them with `<div>` and indent the
+  `<div>`.
+* Duplicate paragraph with ‘“Timestamps”’ ?
 * Duplicated paragraphs generally?
-* Check ‘unit "Grandeur" later on.’
+* Check ‘unit “Grandeur” later on.’
+* Check ‘in the “Family 1” unit.’
+* Check ‘from the “Imperatives”’
+* Check ‘later unit (“Adv”)’
 * Is “skill” mentioned where “unit” should be used?
-* Make sure commas in &amp;#123;…&amp;#125; and &amp;#171;…&amp;#187; shouldn’t interrupt {} or «»
+* Make sure commas in &amp;#123;…&amp;#125; and &amp;#171;…&amp;#187; shouldn’t
+  interrupt {} or «»
 * “Course notes still in progress”
 * Invalid Klingon phrases should be prefixed with “*”
-* What’s going on with the last units (34–42). Are they duplicates of previous ones?
+* What’s going on with the last units (34–42). Are they duplicates of previous
+  ones?
 * Add sentences from the Duolingo Guidebooks(?)
 * Capitalize headings
 * Update “Do Math” unit
+* Fix table CSS (move into `<style>`).
+* Be consistent in ending Klingon sentences with period (either do, or don’t
+  do).
+* Turn “ – ” into “—”.
 
 -------------------------------------------------------------------------------
 
@@ -445,7 +455,7 @@ handsome, I am not stupid—and/or are questions—is he handsome? are you smart
 These are formed with the verb suffix {-’a’} for a yes/no question and the verb
 suffix {-be’} for negative. The verb suffix {-’a’} is classified as a “type 9”
 verb suffix and will always be the last suffix on a verb. The verb suffix
-{-be’} is classified as a “rover”, and the nature of its “roving” will be
+{-be’} is classified as a *rover*, and the nature of its “roving” will be
 explained once you have learned more suffixes.
 
 These suffixes can be added to any verb to turn it into a negative or a
@@ -828,12 +838,12 @@ Klingon» and {tlhIngan Hol vIjatlhlaH} «I can speak Klingon».
 ### Verb suffix {-be’} «not»
 
 In an earlier unit we introduced the very useful verb suffix {-be’}, which
-means «not». You may remember that this suffix is classified as a “rover.”
+means «not». You may remember that this suffix is classified as a *rover*.
 Unlike suffix types 1-9, some of the rovers can actually be placed in different
 orders and change the meaning of the sentence slightly based on where they
 occur.
 
-The “rover” suffix {-be’} comes after the verb portion which it negates.
+The *rover* suffix {-be’} comes after the verb portion which it negates.
 
 So {tlhIngan Hol vIjatlhlaHbe’} means «I cannot speak Klingon» (the {-be’}
 negates the {-laH}), while {tlhIngan Hol vIjatlhbe’laH} would mean «I am able
@@ -1042,7 +1052,7 @@ part of {ghaH}.
 
 With a verb as an adjective following the noun it describes there is no «to be»
 in the English translation. If you want to use such a noun phrase as the topic
-in a “pronoun as «to be»” sentence, the {-’e’} suffix goes on the end of the
+in a pronoun as «to be» sentence, the {-’e’} suffix goes on the end of the
 whole noun phrase (appearing to attach to the verb).
 
 Compare:
@@ -1139,78 +1149,77 @@ This suffix is used to intensify a verb or another verb suffix.
 You have seen previously, in this course, that other verb suffixes have type
 numbers and must occur in a specific order following their type number. You
 have also learned how to use the {-be’} suffix, which is classified as a
-"rover" and can be placed in different locations to negate specific parts of
-the verb. This {-qu’} suffix is also a "rover" and can occur directly after the
+*rover* and can be placed in different locations to negate specific parts of
+the verb. This {-qu’} suffix is also a *rover* and can occur directly after the
 verb or after another suffix. When it occurs directly after the verb it is used
 to emphasize the action or state of the verb itself.
 
-Most often, it’s used on adjectival verbs to give a meaning like "very …" or
-"really …" or "extremely …": For example, {valqu’ SuvwI’} could be translated
-as, "The warrior is very smart," and, {yoHqu’ SuvwI’ valqu’} could be
+Most often, it’s used on adjectival verbs to give a meaning like «very …» or
+«really …» or «extremely …»: For example, {valqu’ SuvwI’} could be translated
+as, «The warrior is very smart,» and, {yoHqu’ SuvwI’ valqu’} could be
 translated as «The very smart warrior is really brave.»
 
-Note that "really" is being used in these sentences to intensify the following
+Note that «really» is being used in these sentences to intensify the following
 word and not necessarily to imply the truthfulness of the statement (there are
 suffixes for that, but you’ll learn them in another unit).
 
 When the suffix {-qu’} occurs after another verb suffix, it tends to emphasize
 the meaning of that specific suffix, though officially it is emphasizing the
 meaning of the whole word before it. For instance:
-<br>{nIQoylaH} would mean, "They can hear you,"
-<br>{nIQoyqu’laH} would mean, "They can really hear you,"
-<br>and {nIQoylaHqu’} would mean, "They are really able hear you."
+<br>{nIQoylaH} would mean, «They can hear you,»
+<br>{nIQoyqu’laH} would mean, «They can really hear you,»
+<br>and {nIQoylaHqu’} would mean, «They are really able hear you.»
 
 As with {-be’}, the suffix {-qu’} can be used multiple times in the same verb
 construction (to emphasize multiple different things). It is possible to say
-something like, {nIQoyqu’laHqu’} ("They are really able to really hear you.").
+something like, {nIQoyqu’laHqu’} («They are really able to really hear you.»).
 
 
 ### Demonstratives
 
-You have already learned how to use the noun type 4 suffixes {-vam} ("this")
-and {-vetlh} ("that"). In English we use something called "demonstrative
-adjectives" to accomplish this same thing. Similarly to how the Klingon
-suffixes attach to the ends of the nouns they are "demonstrating", these
-English "demonstrative adjectives" must be placed before the nouns that they
-are "demonstrating":
+You have already learned how to use the noun type 4 suffixes {-vam} «this» and
+{-vetlh} «that». In English we use something called *demonstrative adjectives*
+to accomplish this same thing. Similarly to how the Klingon suffixes attach to
+the ends of the nouns they are “demonstrating,” these English *demonstrative
+adjectives* must be placed before the nouns that they are demonstrating:
 <br>{tajvam} «this knife»
 <br>{tajvetlh} «that knife»
 
-English also has something called "demonstrative pronouns" which can
-"demonstrate" a noun by taking the place of the noun and not attaching to
+English also has something called *demonstrative pronouns* which can
+*demonstrate* a noun by taking the place of the noun and not attaching to
 anything:
-<br>"This is a knife."
-<br>"That is sharp."
+<br>«This is a knife.»
+<br>«That is sharp.»
 
-Klingon does not have anything like a "demonstrative pronoun". There is no way
+Klingon does not have anything like a *demonstrative pronoun*. There is no way
 to directly and literally translate such an English sentence. We must come up
 with similar Klingon sentences that have the same sort of idea, even though
 they are not exactly the same.
 
 We are not going to go through all the possible methods here. We are just going
 to demonstrate one simple method. While the Klingon pronoun {’oH} is a very
-close and direct translation of the English word "it", you can use it where an
-English speaker might use a "demonstrative pronoun".
+close and direct translation of the English word «it», you can use it where an
+English speaker might use a *demonstrative pronoun*.
 
-An English speaker might hold out a knife in his hand and say, "This is a
-knife." A Klingon holding out the knife and wanting to demonstrate what it is
+An English speaker might hold out a knife in his hand and say, «This is a
+knife.» A Klingon holding out the knife and wanting to demonstrate what it is
 would say, {taj ’oH.} (Note that this sentence is using the pronoun {’oH} as if
-it were a verb meaning "it is" or "this is".)
+it were a verb meaning «it is» or «this is».)
 
-An English speaker might point to the knife on the counter and say, "That is
-sharp." A Klingon pointing to the knife and wanting to demonstrate that it is
-sharp could say, {jej ’oH}. (Note that {jej} is the verb "to be sharp" and
+An English speaker might point to the knife on the counter and say, «That is
+sharp.» A Klingon pointing to the knife and wanting to demonstrate that it is
+sharp could say, {jej ’oH}. (Note that {jej} is the verb «to be sharp» and
 {’oH} is just acting as a simple pronoun here.)
 
 Other third-person pronouns can be used in a similar method:
-<br>{tajmey bIH} ("These are knives.")
-<br>{tlhIngan ghaH} ("That is a Klingon.")
-<br>{Humanpu’ chaH} ("Those are Humans.")
+<br>{tajmey bIH} «These are knives.»
+<br>{tlhIngan ghaH} «That is a Klingon.»
+<br>{Humanpu’ chaH} «Those are Humans.»
 
 You will find some exercises in this unit which include English sentences that
-have "demonstrative pronouns". We have included those sentences to give you a
+have *demonstrative pronouns*. We have included those sentences to give you a
 chance to practice using the regular Klingon third-person pronouns in place of
-the missing "demonstrative pronouns".
+the missing *demonstrative pronouns*.
 
 
 ## Discuss locations
@@ -1229,21 +1238,21 @@ can mean «at», «in», «on», «by», «to». A noun with {-Daq} would normal
 before the object of the sentence.
 
 Depending on the verb, you may not need {-Daq}; some verbs have destinations or
-locations "built in" to them and the destination or location is treated as an
-object. Though in English we say that one would "go to" somewhere, Klingon does
-not use {-Daq} because the verb {jaH} already includes the idea of "to" when
+locations *built in* to them and the destination or location is treated as an
+object. Though in English we say that one would «go to» somewhere, Klingon does
+not use {-Daq} because the verb {jaH} already includes the idea of «to» when
 used with an object.
 
-The word {nuqDaq} is usually translated as "where" and is placed into the same
+The word {nuqDaq} is usually translated as «where» and is placed into the same
 position that the location would go if it were a statement. Even with verbs
-that have movement "built in" and would not normally have {-Daq} added to the
-destination, {nuqDaq} is used to ask "where". Since this is a question word,
+that have movement *built in* and would not normally have {-Daq} added to the
+destination, {nuqDaq} is used to ask «where». Since this is a question word,
 the interrogative verb suffix {-’a’} is *not* used.
 
 
 ### {-vo’}
 
-The type 5 noun suffix {-vo’} means "from" and is used to specify a starting
+The type 5 noun suffix {-vo’} means «from» and is used to specify a starting
 point or origin.
 
 As both are type 5 noun suffixes, you may not use both {-Daq} and {-vo’} on the
@@ -1259,10 +1268,10 @@ to the verb: {loDpu’ wochvo’} «from the tall men».
 ### {-taH}
 
 The type 7 verb suffix {-taH} is used for continuous or ongoing actions. Its
-meaning is very similar to that of the English -ing in "I am running".
+meaning is very similar to that of the English -ing in «I am running».
 
-Since Klingon doesn’t have tense, {jIqettaH} can mean "I am running" or can
-mean "I was running" or "I will be running"—the {-taH} only shows that it is,
+Since Klingon doesn’t have tense, {jIqettaH} can mean «I am running» or can
+mean «I was running» or «I will be running»—the {-taH} only shows that it is,
 was, or will be an ongoing action.
 
 
@@ -1272,8 +1281,8 @@ The type 7 verb suffix {-lI’} is similar to {-taH} and also identifies an
 ongoing action; however, it also implies that the action is heading towards a
 specific end or goal.
 
-{tera’ vIjaHlI’} (with {jaH} «go (to)») could be translated as "I am on my way
-to the Earth"—with the suffix {-lI’} implying that the going is not only
+{tera’ vIjaHlI’} (with {jaH} «go (to)») could be translated as «I am on my way
+to the Earth»—with the suffix {-lI’} implying that the going is not only
 ongoing but that you are making progress towards a known end point (when you
 reach the Earth, you will stop).
 
@@ -1283,11 +1292,11 @@ verb. They *can*, however, be used with other suffixe types.
 
 ### To be «in», «at», «on» or «by» a place
 
-As noted before, pronouns help to fill the role of the verb "to be" in Klingon.
+As noted before, pronouns help to fill the role of the verb «to be» in Klingon.
 This is also true with locations, such as, {monDaq ’oH} «It is in the capital.»
 
-As with other "to be" sentences, if you want to explicitly state the subject
-when using a pronoun as the verb "to be", you have to use the noun suffix
+As with other «to be» sentences, if you want to explicitly state the subject
+when using a pronoun as the verb «to be», you have to use the noun suffix
 {-’e’}. {yuQDaq ’oH veng’e’} «The city is on the planet.»
 
 
@@ -1296,28 +1305,28 @@ when using a pronoun as the verb "to be", you have to use the noun suffix
 Klingon often uses {-taH} in combination with a pronoun and a location to
 indicate a temporary, but currently ongoing presence—for example, {Qo’noSDaq
 ghaHtaH mara’e’} «Mara is on Kronos» (the Klingons’ home world); a bit more
-literally, "As for Mara, she is being on Kronos".
+literally, «As for Mara, she is being on Kronos».
 
 
 ### {Sum} and {Hop}
 
-The adjectives {Sum} and {Hop} mean "(be) near" and "(be) far", respectively.
+The adjectives {Sum} and {Hop} mean «(be) near» and «(be) far», respectively.
 
 On their own, they usually mean that something is near the speaker or far from
-the speaker. For example, {Sum mara} would mean "Mara is close (to me)".
+the speaker. For example, {Sum mara} would mean «Mara is close (to me)».
 
 If you want to say that something or someone is close to (or far from) someone
 else, you can use {-Daq} to make the reference point explicit: {SoHDaq Sum
-mara} (literally, "at you, Mara is close") would mean "Mara is near you", while
-{SoHDaq Hop mara} (literally, "at you, Mara is far") would mean "Mara is far
-away from you".
+mara} (literally, «at you, Mara is close») would mean «Mara is near you», while
+{SoHDaq Hop mara} (literally, «at you, Mara is far») would mean «Mara is far
+away from you».
 
 
 ### Above and below
 
-Klingon doesn’t have prepositions such as "above" or "below" or "next to".
+Klingon doesn’t have prepositions such as «above» or «below» or «next to».
 
-Instead, there are nouns that mean "area above", "area below", "area next to",
+Instead, there are nouns that mean «area above», «area below», «area next to»,
 and so on, and things are described as being in ({-Daq}) those areas.
 
 The area nouns that you will encounter in this lesson, together with a rough
@@ -1333,11 +1342,11 @@ preposition equivalent in English, are:
 </ul>
 
 {nagh retlhDaq ghaHtaH torgh’e’} «Torg is next to the rock» literally means
-something like "Torg is in the rock’s area-beside".
+something like «Torg is in the rock’s area-beside».
 
-Note that in standard Klingon, the way to say something like "in front of me"
-{jIH tlhopDaq} and "behind you" is {SoH ’emDaq}. Later you will learn
-possessive suffixes (like "my" and "your"), but they are not used with these
+Note that in standard Klingon, the way to say something like «in front of me»
+{jIH tlhopDaq} and «behind you» is {SoH ’emDaq}. Later you will learn
+possessive suffixes (like «my» and «your»), but they are not used with these
 area nouns.
 
 -------------------------------------------------------------------------------
@@ -1373,7 +1382,7 @@ ongoing or continuous.
 end, while {-taH} is neutral in this respect. (It neither implies nor denies an
 endpoint, it just notes that the action is currently ongoing.)
 
-Sometimes, "is in the process of (doing something)" may be an equivalent for
+Sometimes, «is in the process of (doing something)» may be an equivalent for
 {-lI’}. Sometimes, a different verb might convey the goal-oriented action, e.g.
 {tlha’taH} «he is following him» versus {tlha’lI’} «he is pursuing him».
 
@@ -1381,8 +1390,8 @@ Sometimes, "is in the process of (doing something)" may be an equivalent for
 #### {-pu’} and {-ta’}
 
 These verb suffixes mark perfective aspect: that a given action is completed.
-They are commonly translated into the English perfect tenses: "has done, had
-done, will have done".
+They are commonly translated into the English perfect tenses: «has done», «had
+done», «will have done».
 
 {-pu’} is the more general and neutral suffix, and does not specify or deny any
 intent to have done the action. The action may have been intentional, it may
@@ -1395,11 +1404,11 @@ On the other hand, the verb suffix {-ta’}, implies that the action was
 undertaken intentionally and was accomplished—that one set out to do the action
 and was successful in the action.
 
-Sometimes the simplest way to represent {-ta’} in English is to add, "has
-accomplished (doing something)" or, "has successfully (done something)". There
+Sometimes the simplest way to represent {-ta’} in English is to add, «has
+accomplished (doing something)» or, «has successfully (done something)». There
 are also some verbs which include a notion of intent in the verb and naturally
-lend themselves to using the {-ta’} suffix, like "has defected", "has won", or
-"has executed". These verbs are not usually used when the action was not
+lend themselves to using the {-ta’} suffix, like «has defected», «has won», or
+«has executed». These verbs are not usually used when the action was not
 deliberately taken.
 
 Note that with {-taH}/{-lI’}, the difference was one of progressing towards an
@@ -1412,8 +1421,8 @@ the difference is instead a question of intent.
 This unit introduces the adverbs {bong} «accidentally» and {chIch}
 «intentionally».
 
-Adverbs and adverbial expressions (such as expressions of time—"yesterday",
-"next month", "on Tuesday" etc.) always come at the beginning in Klingon.
+Adverbs and adverbial expressions (such as expressions of time—«yesterday»,
+«next month», «on Tuesday» etc.) always come at the beginning in Klingon.
 
 Note that putting {chIch} at the beginning of the sentence or {-ta’} on the
 verb of the sentence creates a very similar meaning, but perhaps with a
@@ -1426,7 +1435,7 @@ Klingon grammarians do not consider it incorrect to include both the adverb
 Such sentences are rare, but it is perfectly fine to say, {chIch qoq vItI’ta’}
 «I have intentionally accomplished fixing the robot.»
 
-A later unit ("Adv") will provide more adverbs for you to practice; this is a
+A later unit (“Adv”) will provide more adverbs for you to practice; this is a
 kind of preview.
 
 
@@ -1439,10 +1448,10 @@ kind of preview.
 
 How to get people to do what you want them to? You ask them to nicely!
 
-Klingons are direct, so they don’t waste time on words such as "please". That
-means that a command such as {yIngu’’egh}! "Identify yourself!" is not
-necessarily considered rude; it could be the equivalent of "Excuse me, could
-you tell me who you are, please?". A Klingon might consider such an
+Klingons are direct, so they don’t waste time on words such as «please». That
+means that a command such as {yIngu’’egh}! «Identify yourself!» is not
+necessarily considered rude; it could be the equivalent of «Excuse me, could
+you tell me who you are, please?». A Klingon might consider such an
 uneccessarily complicated and roundabout question as rude and would see the
 directness of {yIngu’’egh}! as much more polite.
 
@@ -1451,7 +1460,7 @@ directness of {yIngu’’egh}! as much more polite.
 
 The most important verbal prefix for imperatives is {yI-}.
 
-It’s used on all imperatives that have a grammatical object of "him, her, it",
+It’s used on all imperatives that have a grammatical object of «him, her, it»,
 no matter how many people you are speaking to. It’s also used on imperatives
 without a grammatical object if you are speaking to one person.
 
@@ -1475,14 +1484,14 @@ to multiple people.
 ### {tI-}
 
 The prefix {tI-} is used whenever the object of the command is third person
-plural ("them"), e.g. {tera’nganpu’ tIngu’!} «Identify the Terrans!». The same
+plural («them»), e.g. {tera’nganpu’ tIngu’!} «Identify the Terrans!». The same
 prefix is used whether you are speaking to one person or many of them.
 
 
 ### {HI-}, {gho-}
 
-{HI-} is used when the object is "me" and {gho-} is used when the object is
-"us", e.g. {HIvoq!} «Trust me!» or {ghovuv!} «Respect us!». These are also the
+{HI-} is used when the object is «me» and {gho-} is used when the object is
+«us», e.g. {HIvoq!} «Trust me!» or {ghovuv!} «Respect us!». These are also the
 same regardless of whether you are speaking to one person or many.
 
 
@@ -1506,7 +1515,7 @@ suffix at the end of the verb, after any other suffixes.
 ### {wej}
 
 The adverb {wej} appears at the beginning of the sentence and makes the
-sentence a negative sentence meaning, "not yet". It is not used with negative
+sentence a negative sentence meaning, «not yet». It is not used with negative
 suffixes like, {-be’} and {-Qo’} and can be used with statements, questions,
 and commands. For instance:
 <br>{wej jagh wISuvpu’.} «We have not yet fought the enemy.»
@@ -1519,8 +1528,8 @@ and commands. For instance:
 When you form the command form of a verb that describes a state, rather than an
 action (the kind of Klingon verb that in English would often be an adjective,
 such as {yoH} «be brave» or {matlh} «be loyal»), you need the suffixes {-’egh}
-and {-moH}, e.g. {yIyoH’eghmoH!} «be brave!», literally "make yourself brave!",
-or {pematlh’eghmoH!} «be loyal!», literally "make yourselves loyal!".
+and {-moH}, e.g. {yIyoH’eghmoH!} «be brave!», literally «make yourself brave!»,
+or {pematlh’eghmoH!} «be loyal!», literally «make yourselves loyal!».
 
 The suffix {-moH} is taught later on, so you will not see such commands with
 state verbs in this unit. This is just a grammar preview.
@@ -1533,7 +1542,6 @@ state verbs in this unit. This is just a grammar preview.
 
 ## Show disposition
 
-
 <div>[#Volition-_-Predisposition] Volition / Predisposition <small title="3571 bytes // 1596197712">6 · 2020-07-31</small><a href="https://www.duolingo.com/skill/kl/Volition-_-Predisposition/practice"></a></div>
 
 This lesson introduces the type 2 verb suffixes, which indicate things such as
@@ -1543,31 +1551,31 @@ willingness or readiness to do so.
 
 ### {-nIS}
 
-{-nIS} means "need"; sometimes "must" or "have to" can also be appropriate.
+{-nIS} means «need»; sometimes «must» or «have to» can also be appropriate.
 {maqetnIS} «we need to run (we must run, we have to run)»
 
 
 ### {-qang}
 
-{-qang} means "willing" and indicates that the subject of the verb does not
+{-qang} means «willing» and indicates that the subject of the verb does not
 mind taking a certain action under the circumstances and does so willingly:
 {tera’ vIjaHqang} «I am willing to go to Earth».
 
 
 ### {-vIp}
 
-{-vIp} means "afraid" and shows that the subject is afraid to do the given
+{-vIp} means «afraid» and shows that the subject is afraid to do the given
 action: {tlhIngan Soj SopvIp tera’ngan} «the earthling is afraid to eat the
 Klingon food» ({Soj} «food», {Sop} «eat»).
 
 You will rarely hear the {-vIp} suffix from a Klingon with a prefix indicating
-that the subject is "I" or "we"—it’s a cultural taboo to indicate that the
+that the subject is «I» or «we»—it’s a cultural taboo to indicate that the
 speaker (or a group including the speaker) is afraid to do something.
 
 
 ### {-beH}
 
-{-beH} means "ready" or "set up" and shows that the device acting as the
+{-beH} means «ready» or «set up» and shows that the device acting as the
 grammatical subject is in a state where it can perform the required action:
 {labbeH} «it is ready to transmit (data)» ({lab} «transmit data»)
 
@@ -1575,8 +1583,8 @@ grammatical subject is in a state where it can perform the required action:
 ### {-rup}
 
 {-rup} is similar to {-beH}, but is used with sentient subjects (this time, no
-language use is necessary, so animals, for example, qualify); it means "ready"
-or "prepared" and is used when the subject (a sentient being) is able to take
+language use is necessary, so animals, for example, qualify); it means «ready»
+or «prepared» and is used when the subject (a sentient being) is able to take
 on a task because they are ready to do so: {qaleghrup} «I am ready to see you».
 
 
@@ -1586,20 +1594,20 @@ With all of these suffixes, remember that the negative suffix {-be’} follows
 the part of the word that is negated—this means that it’s important to look at
 the order of suffixes in a word.
 
-{laDvIpbe’} has {-be’} after {-vIp} and so means "he is not afraid to read it"
+{laDvIpbe’} has {-be’} after {-vIp} and so means «he is not afraid to read it»
 (he is {-vIpbe’} to {laD}), while {laDbe’vIp} has {-be’} after {laD} and so
-means "he is afraid to not read it; he is afraid not to read it" (he is {-vIp}
-to {laDbe’}).
+means «he is afraid to not read it»; «he is afraid not to read it» (he is
+{-vIp} to {laDbe’}).
 
 Or as another example, {Duj wItI’nISbe’} has {-be’} after {-nIS} and so means
-"we do not need to repair the ship; we do not have to repair the ship" while
-{Duj wItI’be’nIS} has {-be’} after {tI’} and so means "we must not repair the
-ship; we need to not repair the ship".
+«we do not need to repair the ship; we do not have to repair the ship» while
+{Duj wItI’be’nIS} has {-be’} after {tI’} and so means «we must not repair the
+ship; we need to not repair the ship».
 
 Note that only one type 2 verb suffix can be placed on a single verb. It is
 impossible to use type 2 verb suffixes alone to indicate that someone is
-"willing to be afraid to do something" or "willing to be ready to do
-something". For these kinds of meanings much more complicated constructions,
+«willing to be afraid to do something» or «willing to be ready to do
+something». For these kinds of meanings much more complicated constructions,
 probably consisting of multiple sentences, will need to be used.
 
 
@@ -1613,15 +1621,14 @@ structure to indicate that the action is done on behalf of the Empire.
 
 ## Describe hypotheticals
 
-
 <div>[#if-…-then] if … then <small title="1638 bytes // 1570254499">3 · 2019-10-05</small><a href="https://www.duolingo.com/skill/kl/if-...-then/practice"></a></div>
 
-To express the concept "if", Klingons attach a type 9 verb suffix on the end of
+To express the concept «if», Klingons attach a type 9 verb suffix on the end of
 the verb: {-chugh}.
 
 For example, from {bIyIt} «you walk», you can make {bIyItchugh} «if you walk».
 
-As in English, the "if" clause can come before or after the "result" clause:
+As in English, the *if* clause can come before or after the *result* clause:
 
 <ul>
 <li>{bIDoy’chugh yIQong} «If you are tired, sleep!»
@@ -1629,21 +1636,21 @@ As in English, the "if" clause can come before or after the "result" clause:
 </ul>
 
 Because of this, the exercises will often be strict in requiring that you
-maintain the order of the clauses. When the "if" clause comes first in the
+maintain the order of the clauses. When the *if* clause comes first in the
 language presented to you, it must also come first in the translation.
-Similarly, if the "result" clause comes first in the language presented to you,
+Similarly, if the *result* clause comes first in the language presented to you,
 it must also come first in the translation.
 
 The result clause may start with {vaj} «then, so, thus, in that case»,
-especially when the "if" clause comes first: e.g. {bIDoy’chugh vaj yIQong} «If
+especially when the *if* clause comes first: e.g. {bIDoy’chugh vaj yIQong} «If
 you are tired, then sleep!» It is more unusual, but not incorrect to see {vaj}
 on the result clause when it comes first: {vaj yIQong bIDoy’chugh} «Then sleep,
 if you are tired!» It is also common to see the two clauses side by side
 without using {vaj} in the result clause.
 
-This unit teaches "if" sentences with conditions that are considered real or
-possible. Hypothetical or counterfactual sentences ("If you were tired, you
-would sleep", "If I had studied, I would have passed the test", or the like)
+This unit teaches *if* sentences with conditions that are considered real or
+possible. Hypothetical or counterfactual sentences («If you were tired, you
+would sleep», «If I had studied, I would have passed the test», or the like)
 use a different structure which is not covered in this course.
 
 -------------------------------------------------------------------------------
@@ -1673,8 +1680,8 @@ noun (or noun phrase) indicating the possession:
 <br>{tlhIngan SoS} «the Klingon’s mother»
 
 When you don’t want to list the specific possessor, but just want to refer to
-them, English would use a possessive pronoun, such as "my", "your", "his",
-"their" etc.
+them, English would use a possessive pronoun, such as «my», «your», «his»,
+«their» etc.
 
 In Klingon these relationships are marked with type 4 noun suffixes.
 
@@ -1696,34 +1703,33 @@ suffixes are used:
 <li>{-chaj} «their»
 </ul>
 
-If the possession is a being capable of using language (e.g. "my mother"),
+If the possession is a being capable of using language (e.g. «my mother»),
 some, but not all, of those endings end in a glottal stop {’} instead of a {j},
-e.g. {-lI’} instead of {-lIj}. Those Endings are taught later, in the "Family
-1" unit.
+e.g. {-lI’} instead of {-lIj}. Those Endings are taught later, in the “Family
+1” unit.
 
 Since you have now learned many of the possessive suffixes, remember that the
 possessive suffixes are not generally used with area nouns. In {ta’ Hol} we
 don’t say {tlhopwIjDaq} or {’emlIjDaq} (though speakers from Sakrej region
 would)—instead {ta’ Hol} speakers would use pronouns and say, {jIH tlhopDaq}
-("in front of me") and {SoH ’emDaq} ("behind you").
+«in front of me» and {SoH ’emDaq} «behind you».
 
 
 ### Preview of {-bogh}
 
 You will see the {-bogh} relative-clause verb suffix used in this Skill. It is
-used here to mean, "thing that" as in {puvlaHbogh qoq} «a robot that can fly».
+used here to mean, «thing that» as in {puvlaHbogh qoq} «a robot that can fly».
 For now memorize these words as a unit and the specifics of how to use the
 suffix will be taught in detail later on.
 
 
 ## Identify people
 
-
 <div>[#People] People <small title="5740 bytes // 1584735407">5 · 2020-03-20</small><a href="https://www.duolingo.com/skill/kl/People/practice"></a></div>
 
 In this skill, you will learn some words for talking about people. You have
-already seen some examples such as {tlhIngan} ("Klingon"), {tera’ngan}
-("Terran"), {be’} ("woman") and {loD} ("man").
+already seen some examples such as {tlhIngan} «Klingon», {tera’ngan}
+«Terran», {be’} «woman» and {loD} «man».
 
 You will also be reviewing the type 2 plural noun suffix {-pu’}
 
@@ -1743,18 +1749,18 @@ In this skill, we’ll be focusing on just the first of these suffixes, {-pu’}
 The others are practiced in other units of the course.
 
 While the plural suffixes can make a sentence more clear, they are in fact
-completely optional. The word {tlhIngan} can mean either "Klingon" or
-"Klingons", whereas the word {tlhInganpu’} is explicitly plural and can only
-mean "Klingons".
+completely optional. The word {tlhIngan} can mean either «Klingon» or
+«Klingons», whereas the word {tlhInganpu’} is explicitly plural and can only
+mean «Klingons».
 
-So, if you’re asked to translate the sentence "I see Klingons.", you can
+So, if you’re asked to translate the sentence «I see Klingons.», you can
 respond with either:
 
 <ul>
-<li>{tlhInganpu’ vIlegh.} ("I see Klingons.")
+<li>{tlhInganpu’ vIlegh.} «I see Klingons.»
 <br>or
 <br>
-<li>{tlhIngan vIlegh.} ("I see one or more Klingons.")
+<li>{tlhIngan vIlegh.} «I see one or more Klingons.»
 </ul>
 
 You can also sometimes distinguishing between singular and plural nouns based
@@ -1774,16 +1780,16 @@ on the use of the verb prefixes:
 ### {quv} vs. {batlh}
 
 Both of the *nouns* {quv} and {batlh} are usually represented by the same
-English word "honor". In English we use the word "honor" for a few different
-purposes, but Klingon distinguishes the personal accounting of "honor" that one
-earns and separates it from the "honor" which we talk about as an internal,
+English word «honor». In English we use the word «honor» for a few different
+purposes, but Klingon distinguishes the personal accounting of «honor» that one
+earns and separates it from the «honor» which we talk about as an internal,
 philosophical concept of doing the right thing. As nouns, the official
-descriptions state that {quv} is associated with "reputation, dignity, and
-respect" and {batlh} is associated with "integrity, rectitude, scruples, and
-principles".
+descriptions state that {quv} is associated with «reputation, dignity, and
+respect» and {batlh} is associated with «integrity, rectitude, scruples, and
+principles».
 
-Thus {quv} as a *verb* is usually translated as "be honored" and {batlh} as an
-*adverb* is usually translated as "honorably" or "with honor". {quv} cannot be
+Thus {quv} as a *verb* is usually translated as «be honored» and {batlh} as an
+*adverb* is usually translated as «honorably» or «with honor». {quv} cannot be
 used as an adverb and {batlh} cannot be used as a verb.
 
 
@@ -1807,20 +1813,20 @@ And a few non-Klingons: {qIrq} («Kirk», male); {pIqarD} («Picard», male);
 ### Captain Torg
 
 Titles come after the name in Klingon, the opposite order to English. So,
-"Captain Torg" becomes {torgh HoD}. Rarely this can cause confusion as the same
-phrase can also mean "Torg’s captain."
+«Captain Torg» becomes {torgh HoD}. Rarely this can cause confusion as the same
+phrase can also mean «Torg’s captain.»
 
 
 ### {ra’wI’} «commanding officer»
 
 The noun {ra’wI’} is actually made of a verb + suffix combination and you will
-learn how to create such words later in this course. This is defined as "one
-who commands" or "commander", though we must be careful not to confuse this
-with the similar rank. Thus it is translated as "commanding officer" in this
+learn how to create such words later in this course. This is defined as «one
+who commands» or «commander», though we must be careful not to confuse this
+with the similar rank. Thus it is translated as «commanding officer» in this
 course. Note that a {ra’wI’} does not have to be an officer and this is just
 being used to differentiate from the rank. As a noun, {ra’wI’} can take all the
 noun suffixes including the posessive suffix {-wI’}. At first the word
-{ra’wI’wI’} ("my commanding officer") may seem odd, but you will get used to
+{ra’wI’wI’} «my commanding officer» may seem odd, but you will get used to
 it.
 
 -------------------------------------------------------------------------------
@@ -1831,7 +1837,6 @@ it.
 
 ## Discuss body parts
 
-
 <div>[#Body-parts] Body Parts 1 <small title="1947 bytes // 1570254499">2 · 2019-10-05</small><a href="https://www.duolingo.com/skill/kl/Body-parts/practice"></a></div>
 
 Body parts (eyes, hands, etc.) have a special plural in Klingon: they are
@@ -1841,8 +1846,8 @@ pluralised not with {-mey} or {-pu’} but with {-Du’}, e.g. {mInDu’} «eyes
 As always, the plural suffix is optional.
 
 Except for the separate plural ending, they act grammatically like other
-inanimate objects, e.g. using {’oH} and {bIH} ("it, them") rather than {ghaH}
-and {chaH} ("he/she, them") and using the regular possessive endings (ending in
+inanimate objects, e.g. using {’oH} «it» and {bIH} «them», rather than {ghaH}
+«he/she» and {chaH} «them» and using the regular possessive endings (ending in
 {j}) such as {-wIj} «my».
 
 Cultural note: Klingons have built-in redundancy in their internal organs so
@@ -1857,18 +1862,17 @@ the fact that some (or perhaps all) Klingons seem to have more than one. The
 get a Klingon to show you, or even tell you about, his {qIvonDu’} unless you
 get to know him extremely well.
 
-The saying {bIrchugh qIvon tuj ’Iw} literally translates as, "If the qIvon is
-cold, the blood is hot," but seems to mean something like, "Even when a Klingon
-does not seem so, he is always ready for battle."
+The saying {bIrchugh qIvon tuj ’Iw} literally translates as, «If the {qIvon} is
+cold, the blood is hot,» but seems to mean something like, «Even when a Klingon
+does not seem so, he is always ready for battle.»
 
 The idiom {bel qIvon} is often used with kids and seems to refer to going to
-the bathroom. One might ask a kid, {belHa’’a’ qIvonlIj}? ("Is your qIvon
-displeased?") or excuse themselves from the room with {qIvonwIj vIbelnISmoH}
-("I must please my qIvon.").
+the bathroom. One might ask a kid, {belHa’’a’ qIvonlIj}? («Is your {qIvon}
+displeased?») or excuse themselves from the room with {qIvonwIj vIbelnISmoH}
+(«I must please my {qIvon}.»).
 
 
 ## Describe objects
-
 
 <div>[#Adjectives] Adjectives <small title="4006 bytes // 1676547420">5 · 2023-02-16</small><a href="https://www.duolingo.com/skill/kl/Adjectives/practice"></a></div>
 
@@ -1879,7 +1883,7 @@ resembling an adjective.
 
 These verbs can be used both in a manner similar to an attributive adjective
 describing a noun (in which case they come after the noun) or as a predicate
-adjective (like "… is blue/old/brave/…") in which case they are normal verbs
+adjective (like «… is blue/old/brave/…») in which case they are normal verbs
 and come before the subject without any connecting words (unlike English which
 uses the connecting verb «is/are/be»).
 
@@ -1887,7 +1891,7 @@ uses the connecting verb «is/are/be»).
 ### Old, new, and young
 
 A pair of adjectives to pay special attention to is {ngo’} and {qan}, as these
-both translate to "old" in English.
+both translate to «old» in English.
 
 {ngo’} «old» is the opposite of {chu’} «new», while {qan} «old» is the opposite
 of {Qup} «young».
@@ -1903,14 +1907,14 @@ of the spectrum of visible light.
 Most straightforward are {chIS} «white» and {qIj} «black».
 
 {Doq} covers colors in the red-orange-brown part of the spectrum. It might be
-helpful to think of {Doq} as meaning "warm colored", though for translating
+helpful to think of {Doq} as meaning «warm colored», though for translating
 purposes we ask you to pick a specific color in the range.
 
 {SuD} covers colors in the yellow-green-blue part of the spectrum. It might be
-helpful to think of {SuD} as meaning "cool colored", though for translating
+helpful to think of {SuD} as meaning «cool colored», though for translating
 purposes, we, again, ask you to pick a specific color in the range.
 
-There isn’t really a word for "purple" or "violet" in Klingon, perhaps because
+There isn’t really a word for «purple» or «violet» in Klingon, perhaps because
 Klingon eyes can’t perceive that color, though this is a controversial
 assertion. Some non-Klingons use {Doq ’ej SuD} «blue and red».
 
@@ -1929,8 +1933,8 @@ when a noun is used to modify another noun, it comes before the noun it is
 modifying, as in {tlhIngan Hol} «the Klingon language».
 
 When using a noun phrase made up of two nouns as a location or as the topic of
-a "pronoun as to be" sentence, the suffixes {-Daq} ("in/at/on/by/to"), {-vo’}
-("from"), or {-’e’} (topic) go at the end of the phrase, which is the main
+a pronoun as «to be» sentence, the suffixes {-Daq} («in/at/on/by/to»), {-vo’}
+(«from»), or {-’e’} (topic) go at the end of the phrase, which is the main
 noun: {tlhIngan DujmeyDaq jIQuch} «I am happy on Klingon ships».
 
 When using a noun phrase that is made up of a noun + adjectival verb as a
@@ -1962,8 +1966,8 @@ grammar categorizes all the words that aren’t nouns or verbs as {chuvmey}
 «leftovers». Thus these adverbial words are {chuvmey}.
 
 Adverbials such as these modify or qualify a verb or sentence and may express a
-relation of time, manner, cause, degree, etc. (e.g., "quickly", "on purpose",
-"forcefully", or "with honor").
+relation of time, manner, cause, degree, etc. (e.g., «quickly», «on purpose»,
+«forcefully», or «with honor»).
 
 Adverbial words such as these usually stand at the beginning of a sentence in
 Klingon—before the main Object-Verb-Subject part of the sentence. There are
@@ -1980,14 +1984,13 @@ These suffixes of qualification are taught in a separate unit.
 
 ## Report information
 
-
 <div>[#Vocabulary-3] Vocabulary 3 <small title="641 bytes // 1676547420">3 · 2023-02-16</small><a href="https://www.duolingo.com/skill/kl/Vocabulary-3/practice"></a></div>
 
 A collection of various words.
 
 Of particular note is {pagh}, a word with a range of meanings including «zero»
 (the number), «nothing», and «nobody». We might even throw in some tricky ones
-like translating "not anybody" with {pagh}.
+like translating «not anybody» with {pagh}.
 
 This lesson also includes the verb {’av} «to guard» and the related noun
 {’avwI’} «a guard» (plural {’avwI’pu’} «guards»); since these words start with
@@ -2005,8 +2008,8 @@ added them here to make sure you have seen their definitions.
 <div>[#Numbers-0-100] Numbers 0-100 <small title="4911 bytes // 1676547420">6 · 2023-02-16</small><a href="https://www.duolingo.com/skill/kl/Numbers-0-100/practice"></a></div>
 
 Klingon numbers used to be based on threes rather than tens: counting went
-"one, two, three; 3+1, 3+2, 3+3; 2×3+1, 2×3+2, 2×3+3; 3×3+1, 3×3+2, 3×3+3", and
-then it got complicated.
+«one», «two», «three»; 3 + 1, 3 + 2, 3 + 3; 2 × 3 + 1, 2 × 3 + 2, 2 × 3 + 3;
+3 × 3 + 1, 3 × 3 + 2, 3 × 3 + 3, and then it got complicated.
 
 However, fortunately for learners on Earth, the Klingon scientific community
 has since created a number system based on ten, and this is the one we will be
@@ -2016,33 +2019,34 @@ teaching here.
 the additional numbers {los, vagh, jav, Soch, chorgh, Hut} were borrowed from
 the names of the fourth through ninth notes of the Klingon musical scale.)
 
-Numbers higher than nine use a set of suffixes that attach only to numbers.
+Numbers higher than «nine» use a set of suffixes that attach only to numbers.
 
-Unlike English, these number names are completely regular—as if we used "onety,
-twoty, threety, fourty, fivety" etc. based on "one, two, three, four, five"
-plus a suffix «-ty» for tens.
+Unlike English, these number names are completely regular—as if we used
+«onety», «twoty», «threety», «fourty», «fivety» etc. based on «one», «two»,
+«three», «four», «five» plus a suffix «-ty» for «tens».
 
 In Klingon, the suffixes are:
 
 <ul>
-<li>{-maH} for tens (e.g. {wa’maH} 10, {cha’maH} 20)
-<li>{-vatlh} for hundreds (e.g. {wejvatlh} 300, {loSvatlh} 400)
-<li>{-SaD} or {-SanID} for thousands (e.g. {vaghSaD} 5,000, {javSanID} 6,000)—both suffixes are used about equally often and there is no known difference between them.
-<li>{-netlh} for tens of thousands (e.g. {Sochnetlh} 70,000, {chorghnetlh} 80,000)
-<li>{-bIp} for hundreds of thousands (e.g. {HutbIp} 900,000)
-<li>{-’uy’} for millions (e.g. {wa’’uy’} 1,000,000)
+<li>{-maH} for «tens» (e.g. {wa’maH} «10», {cha’maH} «20»)
+<li>{-vatlh} for «hundreds» (e.g. {wejvatlh} «300», {loSvatlh} «400»)
+<li>{-SaD} or {-SanID} for «thousands» (e.g. {vaghSaD} «5,000», {javSanID} «6,000»)—both suffixes are used about equally often and there is no known difference between them.
+<li>{-netlh} for «tens of thousands» (e.g. {Sochnetlh} «70,000», {chorghnetlh} «80,000»)
+<li>{-bIp} for «hundreds of thousands» (e.g. {HutbIp} «900,000»)
+<li>{-’uy’} for «millions» (e.g. {wa’’uy’} «1,000,000»)
 </ul>
 
-Numbers in between are written with multiple words, e.g. 456 = {loSvatlh
-vaghmaH jav}, 1,007 = {wa’SaD Soch}.
+Numbers in between are written with multiple words, e.g. {loSvatlh vaghmaH jav}
+«456», {wa’SaD Soch} «1,007».
 
-The word for zero, as we have seen before, is {pagh}.
+The word for «zero», as we have seen before, is {pagh}.
 
 Numbers indicating how many of something there are come before the noun they
 are counting: {wa’ paq} «one book».
 
 As we have seen before, plural suffixes on nouns are optional; this is
-particularly true after numbers, e.g. {loS puqpu’ = loS puq} «four children».
+particularly true after numbers, e.g. {loS puqpu’} or {loS puq} both mean «four
+children».
 
 Ordinal numbers are formed with the number suffix {-DIch}, e.g. {cha’maH
 loSDIch} «twenty-fourth», {cha’DIch} «second». Ordinal numbers come after the
@@ -2056,7 +2060,7 @@ times». Repetitions act like adverbs and come at the front of the sentence
 
 ### The question word {’ar}
 
-The word {’ar} means "how many?" or "how much?". This word follows the singular
+The word {’ar} means «how many?» or «how much?». This word follows the singular
 form of the word that it is inquiring about. For example:
 
 <ul>
@@ -2085,24 +2089,23 @@ In this unit you will also learn the words {law’} «be many» and {puS} «be f
 These are verbs and not actually numbers. They can be used as verbs to make
 complete sentences:
 <br>{law’ tlhIngan Duj} «The Klingon ships are many.» (or in English we might
-be more likely to say it as, "There are many Klingon ships.").
+be more likely to say it as, «There are many Klingon ships.»).
 <br>{puS verengan yoH} «The brave Ferengi are few.» (or in English we might be
-more likely to say it as, "There are few brave Ferengi.")
+more likely to say it as, «There are few brave Ferengi.»)
 
 These verbs can also be used in an adjectival manner by following a noun:
 <br>{pawtaH tlhIngan Duj law’} «Many Klingon ships are arriving.»
 <br>{yoH verengan puS} «A few Ferengi are brave.» (or in English we might be
-more likely to say it as, "There are a few brave Ferengi.")
+more likely to say it as, «There are a few brave Ferengi.»)
 
 
 ## Talk about family
 
-
 <div>[#Family-1] Family 1 <small title="5757 bytes // 1586183774">4 · 2020-04-06</small><a href="https://www.duolingo.com/skill/kl/Family-1/practice"></a></div>
 
 This unit introduces possessive suffixes for beings capable of speech—for
-example, "my father, your sister, her brother" etc.—as well as Klingon kinship
-terms, i.e. names for various relatives.
+example, «my father», «your sister», «her brother» etc.—as well as Klingon
+kinship terms, i.e. names for various relatives.
 
 
 ### Possessive suffixes for beings capable of speech
@@ -2116,26 +2119,26 @@ terms, i.e. names for various relatives.
 <li>{-chaj} «their»
 </ul>
 
-Notice that, {-Daj, -chaj} «his, her, their» are the same as for things not
-capable of speech—the others differ by ending in {j} for inanimate objects but
-in {’} for beings capable of speech.
+Notice that, {-Daj} «his/her» and {-chaj} «their» are the same as for things
+not capable of speech—the others differ by ending in {j} for inanimate objects
+but in {’} for beings capable of speech.
 
 Do not mix them up in the company of Klingons and refer, for example, to
 {puqlIj} «your child» as if it were an object.
 
 Note that these suffixes are not used when you are explicitly indicating the
-possessor with a name or a noun. For instance, "the captain’s mother" would be
+possessor with a name or a noun. For instance, «the captain’s mother» would be
 {HoD SoS}. The suffixes are only used to refer to the possessor with generic
-pronouns, like English "your", "his", "their", etc. So "his mother" would be
+pronouns, like English «your», «his», «their», etc. So «his mother» would be
 {SoSDaj}.
 
 
 ### Kinship terms
 
 The Klingon kinship term system is quite a bit more specific than in English,
-which often merges similar relatives together (e.g. "cousin" can refer to any
+which often merges similar relatives together (e.g. «cousin» can refer to any
 grandchild of any of your grandparents that is not your brother or sister, and
-an "uncle" can be related to you by blood or by marriage). On the other hand,
+an «uncle» can be related to you by blood or by marriage). On the other hand,
 Klingon makes no distinction between cousins and nephews/nieces, unlike
 English.
 
@@ -2156,40 +2159,44 @@ to English, since English has separate words for pretty much all of these:
 
 This unit also includes the form {vavoy} «daddy», which is an affectionate
 term, usually for one’s own daddy. The suffix {-oy} in that word will be
-introduced properly and used more widely in the unit "Grandeur" later on.
+introduced properly and used more widely in the unit “Grandeur” later on.
 
 
 ### Terms for collateral relatives
 
-Names for aunts, uncles, cousins, nephews, and nieces are more specific than in
-English-speakers of languages such as Chinese, Swedish, or Turkish may be more
-at home here (though Klingon makes no distinction between elder and younger
-siblings).
+Names for «aunts», «uncles», «cousins», «nephews», and «nieces» are more
+specific than in English-speakers of languages such as Chinese, Swedish, or
+Turkish may be more at home here (though Klingon makes no distinction between
+elder and younger siblings).
 
 
 #### Parents’ generation, father’s side (paternal uncles and aunts)
 
-Your father’s brother is your {tennuS} and his wife is your {’e’mamnal}.
+Your «father’s brother» is your {tennuS}, and your «{tennuS}’s wife» is your
+{’e’mamnal}.
 
-Your father’s sister is your {’e’mam} and her husband is your {tennuSnal}.
+Your «father’s sister» is your {’e’mam}, and your «{’e’mam}’s husband» is your
+{tennuSnal}.
 
 
 #### Parents’ generation, mother’s side (maternal uncles and aunts)
 
-Your mother’s brother is your {’IrneH} and his wife is your {me’nal}.
+Your «mother’s brother» is your {’IrneH} and your «{’IrneH}’s wife» is your
+{me’nal}.
 
-Your mother’s sister is your {me’} and her husband is your {’IrneHnal}.
+Your «mother’s sister» is your {me’} and your «{me’}s husband» is your
+{’IrneHnal}.
 
 
 #### Your and your children’s generations (cousins, nephews, and nieces)
 
-Your cousins are divided into parallel cousins (children of father’s
+Your cousins are divided into «parallel cousins» (children of father’s
 brother/mother’s sister, i.e. of the sibling of the same gender as your parent)
-and cross cousins (children of father’s sister/mother’s brother).
+and «cross cousins» (children of father’s sister/mother’s brother).
 
-Your parallel cousins are your {tey’pu’}; they are {tey’loD} if male and
-{tey’be’} if female. Your cross cousins are your {lorpu’}; they are {lorloD} if
-male and {lorbe’} if female. Klingons tend to be closer to their parallel
+Your «parallel cousins» are your {tey’pu’}; they are {tey’loD} if male and
+{tey’be’} if female. Your «cross cousins» are your {lorpu’}; they are {lorloD}
+if male and {lorbe’} if female. Klingons tend to be closer to their parallel
 cousins than to their cross cousins.
 
 These same names are also used for your nephews and nieces—parallel nephews and
@@ -2197,33 +2204,34 @@ nieces (if you’re a man, then your brother’s children; if you’re a woman, 
 your sister’s children) are {tey’pu’} as well, while children of your sibling
 of the opposite gender as you are your {lorpu’}.
 
-Groups of {tey’pu’} and {lorpu’} together are your {vInpu’} «cousins (in
-general) and nephews and nieces (in general)»; one of them may also be called a
-{vIn} «cousin, nephew, or niece».
+Groups of {tey’pu’} and {lorpu’} together are your {vInpu’} «cousins, nephews
+and nieces (in general)»; one of them may also be called a {vIn} «cousin»,
+«nephew», or «niece».
 
-More distant cousins (second cousin once removed, grandnephew, etc.) are
+More «distant cousins» (second cousin once removed, grandnephew, etc.) are
 {yurpu’}.
 
 
 #### More general terms
 
-An {’e’nal} is an in-law in general: someone who married into your family,
+An {’e’nal} is an «in-law» in general: someone who married into your family,
 whether father-in-law, sister-in-law, uncle-in-law or whatever.
 
-A {tuqnIgh} is a member of your {tuq} «house», i.e. your extended family unit
-or clan.
+A {tuqnIgh} is a «member of your house» ({tuq} «house»), i.e. your extended
+family unit or clan.
 
-Finally, there are three verbs for "to marry": what a man does is {Saw} while
+Finally, there are three verbs for «to marry»: what a man does is {Saw}, while
 what a woman does is {nay}. These specific verbs are usually preferred, but if
 the situation does not allow you to be specific you can say {tlhogh}, which can
-be used by either partner for "to marry".
+be used by either partner for «to marry».
 
 
 ### {quvmoH} «to honor»
 
-You have previously seen {quv} ("to be honored"), but one can also honor
-another with {quvmoH}. The {-moH} ending is a suffix that you will learn later
-in the course. For now just treat them as separate but related verbs.
+You have previously seen {quv} («to be honored»), but one can also honor
+another with {quvmoH} «to honor». The {-moH} ending is a suffix that you will
+learn later in the course. For now just treat them as separate but related
+verbs.
 
 -------------------------------------------------------------------------------
 
@@ -2237,33 +2245,33 @@ in the course. For now just treat them as separate but related verbs.
 
 Various terms for Klingon food and drink.
 
-{Soj} is anything you can consume, so it’s wider than "food" since it also
+{Soj} is anything you can consume, so it’s wider than “food” since it also
 includes drinks.
 
-{Sop} is to eat solid food, {tlhutlh} to drink liquids, and {’ep} is a verb for
-eating {chatlh}.
+{Sop} is «to eat solid food», {tlhutlh} «to drink liquids», and {’ep} is a verb
+for «to eat {chatlh}».
 
-{chatlh} is a kind of soup or stew, in between solid and liquid (though usually
-with less liquid than an English "soup"). English speakers usually "eat" soup
-while Turkish speakers "drink" soup; Klingons {’ep} their {chatlh}, using
+{chatlh} is a kind of «soup» or «stew», in between solid and liquid (though
+usually with less liquid than an English «soup»). English speakers usually «eat
+soup» while Turkish speakers «drink soup»; Klingons {’ep} their {chatlh}, using
 neither the term {Sop} nor {tlhutlh} for the process. It’s probably best
-translated into English as "eat", but only applies to such soups or stews.
+translated into English as «eat», but only applies to such soups or stews.
 
 {naH} is a generic word for the edible parts of plants and is used to refer to
-both what English would call "fruits" and "vegetables". Two specific {naH}
+both what English would call «fruits» and «vegetables». Two specific {naH}
 unique to {Qo’noS}, but similar in some ways to produce which is common on
 Earth, are the {peb’ot}, which is very similar to an Earth cucumber, and the
 {na’ran}, which has some distinct similarities to an Earth orange.
 
-One note on an irregular plural: a {jengva’} is a plate (for eating from), but
-several of them are not {jengva’mey} but rather {ngop}.
+One note on an irregular plural: a {jengva’} is a «plate» (for eating from),
+but several of them are not {jengva’mey}, but rather {ngop} «plates».
 
-That word is treated as a singular noun; for example, "Where are the plates?"
-is {nuqDaq ’oH ngop’e’?} rather than {nuqDaq bIH ngop’e’?}, and "Wash the
-plates!" is {ngop yISay’moH!} rather than {ngop tISay’moH!}.
+That word is treated as a singular noun; for example, «Where are the plates?»
+is {nuqDaq ’oH ngop’e’?} rather than {nuqDaq bIH ngop’e’?}, and «Wash the
+plates!» is {ngop yISay’moH!} rather than {ngop tISay’moH!}.
 
-(English speakers may be reminded of the word "dishware" and German speakers
-may be reminded of the word "Geschirr", which similarly are singular nouns
+(English speakers may be reminded of the word «dishware» and German speakers
+may be reminded of the word «Geschirr», which similarly are singular nouns
 applying to multiple dishes, though not necessarily only plates.)
 
 There are about half a dozen nouns in Klingon with such an irregular plural,
@@ -2278,9 +2286,9 @@ Another vocabulary lesson, with words devoted to clothing and armor.
 
 The word {paSlogh} «socks» is intereresting because it seems to refer to socks
 in general and is always translated into English as a plural, but always
-treated in Klingon as a singular. This kind of noun is often referred to as,
-"inherently plural". It might help to think of the word as meaning something
-more like "hosiery". Klingon does have a word which can refer to a specific,
+treated in Klingon as a singular. This kind of noun is often referred to as
+*inherently plural*. It might help to think of the word as meaning something
+more like «hosiery». Klingon does have a word which can refer to a specific,
 individual solitary sock: {tu’mI’}. It would be very unusual to use the word
 {tu’mI’} with a type 2 plural noun suffix and {paSlogh} would usually be used
 when refering to more than one sock. However, following the pattern of some
@@ -2300,19 +2308,19 @@ that there are “socks scattered all about.”
 This unit is focussed mostly on grammar, namely, the type 3 verb suffixes
 {-choH} and {-qa’}.
 
-{-choH} indicates a change in state; typical translations are "begin to, start
-to" or "become", but sometimes also "fall" (e.g. {QongchoH} «start to sleep =
-fall asleep»).
+{-choH} indicates a change in state; typical translations are «begin to, start
+to» or «become», but sometimes also «fall» (e.g. {QongchoH} «start to sleep» =
+«fall asleep»).
 
 {-qa’} indicates that an action had taken place, stopped, then resumed again.
-"again" is often a translation for {-qa’}; sometimes, "back", "re-", "resume",
-or "repeat".
+«Again» is often a translation for {-qa’}; sometimes, «back», «re-», «resume»,
+or «repeat».
 
 Note that since both of those suffixes are type 3, they fit into the same
 “slot” after a verb and cannot both attach to the same verb at the same
 time—you can use either {-qa’} or {-choH} but not both at once.
 
-So there’s no {-qa’choH} or {-choHqa’} for "start to … again"; just use {-qa’}
+So there’s no {-qa’choH} or {-choHqa’} for «start to … again»; just use {-qa’}
 in this case.
 
 
@@ -2323,12 +2331,12 @@ in this case.
 This unit introduces the questions words of Klingon:
 
 <ul>
-<li>{nuq?} is "what?"
-<li>{’Iv?} is "who?" or "whom?"
-<li>{nuqDaq?} is "where?"
-<li>{ghorgh?} is "when?"
-<li>{chay’?} is "how?"
-<li>{qatlh?} is "why?"
+<li>{nuq?} «what?»
+<li>{’Iv?} «who?» or «whom?»
+<li>{nuqDaq?} «where?»
+<li>{ghorgh?} «when?»
+<li>{chay’?} «how?»
+<li>{qatlh?} «why?»
 </ul>
 
 Please note that even though you are asking a question, you do *not* use the
@@ -2336,18 +2344,18 @@ interrogative verb suffix {-’a’} with these question words. The {-’a’} v
 suffix is only used to turn a statement into a yes/no question and is not used
 with question words like these.
 
-This unit also introduces the question tag {qar’a’?}. This literally means, "is
-it accurate?", but it can also act as a general question tag—English
-translations might include "doesn’t he? aren’t we? isn’t that so? eh? innit?
-right?" depending on the sentence it is attached to, the level of formality,
+This unit also introduces the question tag {qar’a’?}. This literally means, «is
+it accurate?», but it can also act as a general question tag—English
+translations might include «doesn’t he? aren’t we? isn’t that so? eh? innit?
+right?» depending on the sentence it is attached to, the level of formality,
 and where you come from.
 
 
 ### A few notes on the question pronouns {nuq} and {’Iv}:
 
-Just as the difference between {ghaH} and {’oH}, {’Iv} is used for all "beings
-capable of using language" (Klingons, humans, etc.) and can be translated as
-"who" or "whom" and {nuq} «what» is used for other things: animals, plants,
+Just as the difference between {ghaH} and {’oH}, {’Iv} is used for all «beings
+capable of using language» (Klingons, humans, etc.) and can be translated as
+«who» or «whom» and {nuq} «what» is used for other things: animals, plants,
 inanimate objects, etc.
 
 As pronouns, they can act like a noun and they would be placed in the same
@@ -2355,8 +2363,8 @@ position as the answer would occur in the sentence:
 <br>{Sop ’Iv?} «Who ate it?»
 <br>{nuq Sop?} «What did he eat?»
 
-Also like pronouns, they can act like a verb to form a "to be" question (the
-same way that {’oH}, {ghaH}, etc. form "to be" sentences).
+Also like pronouns, they can act like a verb to form a «to be» question (the
+same way that {’oH}, {ghaH}, etc. form «to be» sentences).
 
 So you may see sentences like {’Iv ghaH tlhInganvetlh’e’?} «Who is that
 Klingon?» or {nuq ’oH ponglIj’e’?} «What is your name» with {’Iv} and {nuq}
@@ -2376,12 +2384,12 @@ acting like nouns, and you may also see sentences like {tlhInganvetlh ’Iv?} or
 This unit introduces the noun suffix {-vaD}.
 
 It indicates the beneficiary of an action (for whom something is done?) and is
-often translated as "for" or "to". Note that "beneficiary" is a linguistic term
+often translated as «for» or «to». Note that “beneficiary” is a linguistic term
 and the action is not always to the benefit of the beneficiary. If you give a
 bomb to someone, they are the beneficiary, even though the bomb does not
 necessarily benefit them.
 
-Note that the word "action" is used a couple times in the above paragraph. This
+Note that the word “action” is used a couple times in the above paragraph. This
 suffix connects a noun to a verb when that noun is neither the subject nor the
 direct object. An example of it’s use is that the recipient of verbs of
 speaking or giving would be marked as the beneficiary.
@@ -2390,7 +2398,7 @@ Another example would be its use with {pong} «to name, to call» to mark the
 beneficiary—the person or thing given a certain name—e.g. {SoHvaD mara vIpong}
 «I will call you Mara» (in the sense of: I will use the name Mara for you). The
 English translation does not appear to use a preposition, but Klingon does use
-{-vaD} to indicate the "beneficiary" or "recipient" of the naming.
+{-vaD} to indicate the “beneficiary” or “recipient” of the naming.
 
 
 ### Placement of {-vaD}
@@ -2413,51 +2421,52 @@ book to my stupid friend.»
 
 ### The prefix trick
 
-In English, we can say either "I gave the book to him" or the shorter "I gave
-him the book", without "to"; the sentences mean the same thing and the word
+In English, we can say either «I gave the book to him» or the shorter «I gave
+him the book», without «to»; the sentences mean the same thing and the word
 order makes it clear what is meant.
 
 Klingon also allows one to abbreviate sentences that would use {-vaD} in some
 cases. The recipient has to be first or second person (to me, to you, to us)
 and there must either be a third-person direct object (a singular or plural
-noun or one of the pronouns "him, her, it, them"), or there is no object stated
+noun or one of the pronouns «him, her, it, them»), or there is no object stated
 and the verb cannot take a person as a direct object.
 
 To abbreviate a sentence like this, the verb prefix will show the subject as
 usual, but will show the *indirect* object (the beneficiary/recipient) rather
 than the *direct* object.
 
-For example, {cho-} is the verb prefix for "subject = you (one person), object
-= me". If we say {paq chonob}, it will mean "you gave me a book": the same
+For example, {cho-} is the verb prefix for: subject = «you (one person)», object
+= «me». If we say {paq chonob}, it will mean «you gave me a book»: the same
 thing as {jIHvaD paq Danob} «you gave a book to me».
 
-In the shorter version, {paq chonob}, it is clear that "me" is not the direct
+In the shorter version, {paq chonob}, it is clear that «me» is not the direct
 object (the thing given) because an explicit object {paq} is present.
 
-In the longer version, {jIHvaD paq Danob}, the verb prefix {Da-} (subject =
-you, object = it) agrees more straightforwardly with the direct object.
+In the longer version, {jIHvaD paq Danob}, the verb prefix {Da-} («subject =
+you, object = it») agrees more straightforwardly with the direct object.
 
 Similarly, {qoqmey ghonob!} «Give us the robots!» would be understood the same
 way as {maHvaD qoqmey tInob!} «Give the robots to us!»—{gho-} «you!–us
-(imperative/command)» will be understood with "us" as the indirect object
+(imperative/command)» will be understood with «us» as the indirect object
 because the direct object {qoqmey} is present.
 
 As an example of a verb that cannot take a person as a direct object, {jatlh}
 «to say, to speak» can only take things such as languages, speeches, or
-sentences as direct objects. Thus {qajatlh} cannot mean "I speak you" but has
-to mean "I speak to you".
+sentences as direct objects. Thus {qajatlh} cannot mean *«I speak you» but has
+to mean «I speak to you».
 
 This abbreviated way of forming sentences using the verb prefixes in a
-different way rather than using {-vaD} is also known as "the prefix trick".
+different way rather than using {-vaD} is also known as “the prefix trick”.
 
 
 ### Noun-noun
 
 There is sometimes a temptation to use the {-vaD} suffix to relate two nouns
-when English uses the word "for", as in, "a message for the captain". Klingon
+when English uses the word «for», as in, «a message for the captain». Klingon
 does not use the {-vaD} suffix for this kind of connection and in the vast
 majority of cases, you are better off using the genitive noun-noun
-construction: {HoD QIn} «a message of the the captain».
+construction: {HoD QIn} «a message of the the captain» or «the captain’s
+message».
 
 
 ## Identify a cause
@@ -2475,8 +2484,8 @@ several other languages, such as Esperanto’s «-ig-».
 
 For example, from {poS} «to be open» one can form a new verb {poSmoH} «to cause
 to be open, to make open = to open». From {Sop} «to eat» one can form a new
-verb {SopmoH} «to cause to eat = to feed». From {ghoj} «to learn» one can form
-a new verb {ghojmoH} «to cause to learn = to teach».
+verb {SopmoH} «to cause to eat» = «to feed». From {ghoj} «to learn» one can
+form a new verb {ghojmoH} «to cause to learn» = «to teach».
 
 If the root verb does not take an object, then the subject of the root verb
 simply becomes the object of the causative verb:
@@ -2491,29 +2500,29 @@ depending on whether you want to name both the original subject and object, or
 just one of them:
 
 <ul>
-<li>{tlhIngan Hol ghoj tera’ngan} «the Terran learns Klingon»
+<li>{tlhIngan Hol ghoj tera’ngan} «The Terran learns Klingon»
 <li>{tlhIngan Hol ghojmoH lurveng} «Lurveng teaches Klingon» (original object stays object)
 <li>{tera’ngan ghojmoH lurveng} «Lurveng teaches the Terran» (original subject becomes object)
 <li>{tera’nganvaD tlhIngan Hol ghojmoH lurveng} «Lurveng teaches Klingon to the Terran» (original subject becomes beneficiary; original object stays object)
 </ul>
 
 This means that something like {puq SopmoH torgh} «Torg feeds the child» can be
-ambiguous between "Torg feeds the child (to the targ)" or "Torg feeds the child
-(with pie)".
+ambiguous between «Torg feeds the child (to the targ)» or «Torg feeds the child
+(with pie)».
 
 {targhvaD puq SopmoH torgh} and {puqvaD chab SopmoH torgh} are clear.
 
 
 #### {-’eghmoH} in commands
 
-As you may remember from the "Imperatives" unit, verbs of quality (verbs that
-describe a state or quality, such as "be hungry, be tired, be brave, be loyal",
-rather than an action, such as "run, walk, fight, eat, drink") require
-{-’eghmoH} in the imperative or command form.
+As you may remember from the “Imperatives” unit, verbs of quality (verbs that
+describe a state or quality, such as «be hungry», «be tired», «be brave», «be
+loyal», rather than an action, such as «run», «walk», «fight», «eat», «drink»)
+require {-’eghmoH} in the imperative or command form.
 
-For example, "be brave!" would be {yIyoH’eghmoH!} to one person (literally,
-"cause yourself to be brave!") and {peyoH’eghmoH!} to several people
-(literally, "cause yourselves to be brave!").
+For example, «be brave!» would be {yIyoH’eghmoH!} to one person (literally,
+«cause yourself to be brave!») and {peyoH’eghmoH!} to several people
+(literally, «cause yourselves to be brave!»).
 
 Since {-’egh} is a type 1 verb suffix and {-moH} is a type 4 verb suffix, any
 type 2 or 3 suffixes would come between them, but would otherwise not change
@@ -2530,7 +2539,7 @@ For example, from {yaj} «understand» we get {yajHa’} «misunderstand»; from
 {meS} «to tie (a knot)» {meSHa’} «to untie (a knot)», and from {par} «to
 dislike» {parHa’} «to like».
 
-{-Ha’} is officially classified as {lengwI’} (a Rover) by Klingon linguists,
+{-Ha’} is officially classified as {lengwI’} (a rover) by Klingon linguists,
 but, in actuality, it doesn’t rove the way {-be’} and {-qu’} do. When {Ha’} is
 used it always comes immediately after the verb, including even before any Type
 1 verb suffixes.
@@ -2543,7 +2552,6 @@ used it always comes immediately after the verb, including even before any Type
 
 ## Give an explanation
 
-
 <div>[#Cause-2] Cause 2 <small title="4572 bytes // 1615586884">5 · 2021-03-13</small><a href="https://www.duolingo.com/skill/kl/Cause-2/practice"></a></div>
 
 This unit teaches the suffix {-mo’} and another use of the verb suffix {-Qo’}
@@ -2552,15 +2560,15 @@ which we have seen before.
 
 ### {-mo’}
 
-The suffix {-mo’} means "because (of)" and appears as either a noun suffix or a
+The suffix {-mo’} means «because (of)» and appears as either a noun suffix or a
 verb suffix. Klingon linguists treat these as two separate suffixes, one type 5
 noun suffix and one type 9 verb suffix. Most of the suffixes are unique and the
 few that do look similar have completely different uses and meanings ({-pu’} on
 a noun is a plural and on a verb indicates it is perfective, {-lI’} on a noun
-is a possessive and on a verb indicates it is "in progress"). Grammatically we
+is a possessive and on a verb indicates it is «in progress»). Grammatically we
 separate the noun suffix {-mo’} from the verb suffix {-mo’}, but they both
 occur as the last suffix on a word (whether a noun or a verb) and they both
-mean "because" (when we use this noun suffix we often add "of" to the English
+mean «because» (when we use this noun suffix we often add «of» to the English
 translation).
 
 As an example of using the noun suffix {-mo’}, from {vavwI’} «my father» we can
@@ -2587,19 +2595,19 @@ translate them in the same order as presented.
 ### {-Qo’}
 
 The verb suffix {-Qo’} has come up on imperatives (command forms) before, where
-it turns the command into a negative: "Don’t …!". This can also be interpreted
-as "Refuse to …!"
+it turns the command into a negative: «Don’t …!». This can also be interpreted
+as «Refuse to …!»
 
 When the verb is not imperative, the {-Qo’} suffix can also be used to mean
-"refuse".
+«refuse».
 
 For example, from {qagh Sop tera’ngan} «The Terran eats gagh» we get {qagh
 SopQo’ tera’ngan} «The Terran refuses to eat gagh».
 
 On non-imperative verbs the {-Qo’} suffix is often translated simply with the
-words "will not" or "won’t" (only as an indication of refusal and not as a
+words «will not» or «won’t» (only as an indication of refusal and not as a
 reference to future tense). So {qagh SopQo’ tera’ngan} can also be translated
-as "The Terran won’t eat gagh."
+as «The Terran won’t eat gagh.»
 
 There is a subtle difference here from regular negation with {-be’}. Compare:
 <br>{qagh Sopbe’ tera’ngan} «The Terran doesn’t eat gagh.»
@@ -2613,13 +2621,13 @@ sentences.
 
 Any type 9 syntactic verb suffix will always occur after the {-Qo’} suffix. The
 type 9 syntactic verb suffixes that you have learned in this or prior units are
-the "interrogative" {-’a’} verb suffix, the "if" {-chugh} verb suffix, and the
-"because" {-mo’} verb suffix presented above. Thus to ask "Does the Terran
-refuse to eat gagh?" a Klingon might ask, {qagh SopQo’’a’ tera’ngan}? Or to
-say, "If you won’t buy, then you will die," a Klingon might say, {bIje’Qo’chugh
+the {-’a’} «interrogative» verb suffix, the {-chugh} «if» verb suffix, and the
+{-mo’} «because» verb suffix presented above. Thus to ask, «Does the Terran
+refuse to eat gagh?» a Klingon might ask, {qagh SopQo’’a’ tera’ngan?} Or to
+say, «If you won’t buy, then you will die,» a Klingon might say, {bIje’Qo’chugh
 vaj bIHegh}. Or, the customer having already failed to make a purchase, the
-Klingon might say, {bIje’pu’Qo’mo’ DaH bIHegh} ("Because you have refused to
-buy, now you will die.")
+Klingon might say, {bIje’pu’Qo’mo’ DaH bIHegh} («Because you have refused to
+buy, now you will die.»)
 
 
 ## Discuss space bodies
@@ -2631,14 +2639,14 @@ This unit introduces various words related to space, stars, planets, etc.
 It also includes the word {tu’lu’}.
 
 The grammar behind this will be taught more explicitly later, so for now, just
-learn {X tu’lu’} as "there is an X", and {Y-mey (lu)tu’lu’} as "there are
-(some) Ys".
+learn {X tu’lu’} as «there is an X», and {Y-mey (lu)tu’lu’} as «there are
+(some) Ys».
 
 Technically, the verb form should be {lutu’lu’} if there are many Ys, but many
 Klingons just say {tu’lu’} whether there is just one thing or there are many
-things. It’s perhaps a bit like "whom" in English—"Whom did you see?" is the
+things. It’s perhaps a bit like «whom» in English—«Whom did you see?» is the
 conservative form and is technically correct, but very many native speakers
-would simply say "Who did you see?".
+would simply say «Who did you see?».
 
 This course generally uses just {tu’lu’} whether there is just one object or
 many.
@@ -2666,8 +2674,8 @@ For example, we might say {vavwI’ rur torgh} «Torg resembles my father».
 This verb is also used to ascribe qualities to someone by comparing them to
 someone or something else that has that quality.
 
-For example, {quv torgh; qeylIS rur} literally means "Torg is honored; he
-resembles Kahless" but idiomatically means "Torg is as honored as Kahless"—the
+For example, {quv torgh; qeylIS rur} literally means «Torg is honored; he
+resembles Kahless» but idiomatically means «Torg is as honored as Kahless»—the
 implied comparison is that Torg resembles Kahless in that quality we have just
 mentioned, namely being honored.
 
@@ -2684,18 +2692,18 @@ the word «than».
 
 Klingon does this quite differently.
 
-To say something such as "My father is stronger than your brother", Klingons
+To say something such as «My father is stronger than your brother», Klingons
 say {vavwI’ HoS law’ loDnI’lI’ HoS puS}.
 
 This might be interpreted, somewhat literally though ungrammatically in
-English, as "my father’s strong is many; your brother’s strong is few" or "my
-father has much strong, your brother has few strong".
+English, as «my father’s strong is many; your brother’s strong is few» or «my
+father has much strong, your brother has few strong».
 
 The adjectival verb (here: {HoS}) has to be named twice—once with the {law’}
 «many» and once with the {puS} «few». When used in this kind of construction,
 the adjectival verb never takes a prefix, and pronouns may be used for the
-nouns which are being compared, for example: {jIH HoS law’ SoH HoS puS} for "I
-am stronger than you."
+nouns which are being compared, for example: {jIH HoS law’ SoH HoS puS} for «I
+am stronger than you.»
 
 In the hints for translating Klingon to English, combinations such as {HoS
 law’} are usually glossed as «stronger» and {puS} is glossed as «than», but you
@@ -2717,7 +2725,7 @@ only accept {law’}/{puS}, though.*
 The comparative structure mentioned above can be turned into a superlative one
 (Torg is the bravest, etc.) by using {Hoch} «everyone, everything» as the
 second part of the comparison: {torgh yoH law’ Hoch yoH puS} «Torg is the
-bravest» (more literally, "Torg is braver than everyone").
+bravest» (more literally, «Torg is braver than everyone»).
 
 If you want to specify the group from among whom Torg is the bravest, you can
 use the topic marker to do so: {tlhInganpu’’e’ torgh yoH law’ Hoch yoH puS} «As
@@ -2734,16 +2742,16 @@ happens.
 
 It works for full hours.
 
-The question is {’arlogh Qoylu’pu’?} and can be translated as "what time is
-it?"
+The question is {’arlogh Qoylu’pu’?} and can be translated as «What time is
+it?»
 
-The literal translation is "how many times has it been heard?", with "it"
+The literal translation is «How many times has it been heard?», with «it»
 originally referring to some traditional bell or chime, presumably.
 
 Saying when something happens in the future or had happened in the past can be
-done with {xxx-DI’ yyy-logh Qoylu’pu’} «xxx will happen / happened at yyy
-o’clock», or literally, "when xxx happens / happened, it will have been heard /
-had been heard yyy times".
+done with {xxx-DI’ yyy-logh Qoylu’pu’} «xxx will happen/happened at yyy
+o’clock», or literally, «when xxx happens/happened, it will have been heard/had
+been heard yyy times».
 
 For example, {mapawDI’ loSlogh Qoylu’pu’} «We will arrive at four o’clock / We
 arrived at four o’clock» (literally: «when we arrived, it had been heard four
@@ -2760,8 +2768,8 @@ times»).
 <div>[#Time-from-now-and-time-ago] Time from now and time ago <small title="4711 bytes // 1585041624">2 · 2020-03-24</small><a href="https://www.duolingo.com/skill/kl/Time-from-now-and-time-ago/practice"></a></div>
 
 This unit teaches you how to describe some things that happened in the past or
-will happen in the future with words such as "the day before yesterday" or
-"three months from now". It also introduces the days of the week.
+will happen in the future with words such as «the day before yesterday» or
+«three months from now». It also introduces the days of the week.
 
 
 ### The Klingon day
@@ -2775,7 +2783,7 @@ day can be divided into {pem} «daytime» followed by {ram} «night».
 
 You may notice that the word {jaj} appears in the timestamp {DaHjaj} «today».
 It is also used in the word {jajvam} «this day». {jajvam} seems never to be
-used as a timestamp, but is frequently used to refer to "today" in sentences as
+used as a timestamp, but is frequently used to refer to «today» in sentences as
 the subject, object, or topic of the sentence. For instance in the famous
 Klingon aphorism, {Heghlu’meH QaQ jajvam!} «Today is a good day to die!»
 
@@ -2786,7 +2794,7 @@ it is rare to see it that way. {jajvam} is mostly used for that purpose and
 
 ### Time ago and time from now
 
-Klingon expresses notions such as "x days ago" or "y days from now" with
+Klingon expresses notions such as «x days ago» or «y days from now» with
 special syllables combined with a preceeding number and do not use the word
 {jaj}.
 
@@ -2829,7 +2837,7 @@ And the answer might be {wa’maH chorghben jIboghpu’} «I was born eighteen y
 ago = I am eighteen years old».
 
 It is standard to use the {-pu’} syllable even though the English does not
-include "has/had/will have" and so we allow answers that do not include them
+include «has/had/will have» and so we allow answers that do not include them
 for these phrases.
 
 
@@ -2839,9 +2847,9 @@ For other time periods that have no specific suffixes, such as minutes from now
 or weeks ago, you can use {ret} «time period ago» and {pIq} «time period from
 now».
 
-For example, {wa’ Hogh ret} is "one week ago" and {wa’maH tup pIq} is "ten
-minutes from now"—literally, "one week’s time-period-ago" and "ten minutes’
-time-period-from-now".
+For example, {wa’ Hogh ret} is «one week ago» and {wa’maH tup pIq} is «ten
+minutes from now»—literally, «one week’s time-period-ago» and «ten minutes’
+time-period-from-now».
 
 
 ### Days of the week
@@ -2867,24 +2875,23 @@ The days {DaSjaj} through {ghInjaj/lojmItjaj} are Klingon weekday names and are
 used in the Klingons’ six-day week.
 
 When Klingons encounter calendars with more than six weekdays, they simply
-number the remaining days and call them "Day One, Day Two, Day Three" etc.
+number the remaining days and call them «Day One», «Day Two», «Day Three» etc.
 
-Thus our Sunday gets called {jaj wa’}, literally, "Day One".
+Thus our Sunday gets called {jaj wa’}, literally, «Day One».
 
 
 ## Discuss time relations
-
 
 <div>[#Time-suffixes] Time suffixes <small title="788 bytes // 1569559898">2 · 2019-09-27</small><a href="https://www.duolingo.com/skill/kl/Time-suffixes/practice"></a></div>
 
 This unit teaches some type 9 syntactic verb suffixes that indicate when
 something happened or will happen.
 
-{-pa’} means "before", {-DI’} means "when" or "as soon as", and {-taHvIS} means
-"while".
+{-pa’} means «before», {-DI’} means «when» or «as soon as», and {-taHvIS} means
+«while».
 
 {-taHvIS} is really a compound of {-taH}, the continuous-aspect suffix which we
-have seen before, and {-vIS}, which conveys the "while" meaning and which is
+have seen before, and {-vIS}, which conveys the «while» meaning and which is
 always used together with {-taH}.
 
 For example, {bISoppa’ ghopDu’ tISay’moH!} «Before you eat» {(bISoppa’)}«, wash
@@ -2904,13 +2911,13 @@ you eat!»
 <div>[#Purpose] Purpose <small title="937 bytes // 1540473471">1 · 2018-10-25</small><a href="https://www.duolingo.com/skill/kl/Purpose/practice"></a></div>
 
 This unit introduces the verb suffix {-meH} which is used for purpose
-clauses—"in order to (do something)" or "so that (something)".
+clauses—«in order to (do something)» or «so that (something)».
 
 Together with the verb {lo’} «use», this also gives us a way to phrase things
-that would use the preposition "with" in English.
+that would use the preposition «with» in English.
 
-For example, "he cut the fruit with a knife" can be rephrased as "to cut the
-fruit, he used a knife" {naH pe’meH taj lo’}. (Note that the purpose clause
+For example, «he cut the fruit with a knife» can be rephrased as «to cut the
+fruit, he used a knife» {naH pe’meH taj lo’}. (Note that the purpose clause
 *must* come *before* the other clause—the word order {*taj lo’ naH pe’meH} is
 not possible.)
 
@@ -2922,33 +2929,32 @@ that you all can read» {(SulaDlaHmeH)}«.»
 
 ## Use unknown subjects
 
-
 <div>[#Indefinite-subject] Indefinite subject <small title="4922 bytes // 1585836076">2 · 2020-04-02</small><a href="https://www.duolingo.com/skill/kl/Indefinite-subject/practice"></a></div>
 
-This unit is all about the type 5 verb suffix {-lu’}, called the "indefinite
-subject" suffix.
+This unit is all about the type 5 verb suffix {-lu’}, called the «indefinite
+subject» suffix.
 
 
 ### Indefinite Subject
 
 This suffix indicates that the subject or actor is unknown, indefinite,
 irrelevant, or general. We often indicate this in English by using generic
-subjects like, "one", "someone", or "they".
+subjects like, «one», «someone», or «they».
 
-For example, {loD choplu’pu’} would mean "someone has bitten the man", "they
-have bitten the man", or "one has bitten the man".
+For example, {loD choplu’pu’} would mean «someone has bitten the man», «they
+have bitten the man», or «one has bitten the man».
 
 
 ### Prefixes
 
 The use of verbal prefixes in connection with this suffix is a bit unusual.
 
-The prefix is chosen as if the patient or "sufferer" of the verb were the
-subject and the object were "he, she, it".
+The prefix is chosen as if the patient or “sufferer” of the verb were the
+subject and the object were «he, she, it».
 
-For example, "it bites you" (when speaking to one person) is {Duchop}, but when
-using {-lu’} to say, "one bites you", {Du-} is not used but instead {Da-}—the
-form used for "you (one person) do something to it": {Dachoplu’} «one bites
+For example, «it bites you» (when speaking to one person) is {Duchop}, but when
+using {-lu’} to say, «one bites you», {Du-} is not used but instead {Da-}—the
+form used for «you (one person) do something to it»: {Dachoplu’} «one bites
 you; someone or something bites you; they bite you».
 
 Thus, we have:
@@ -2966,17 +2972,17 @@ Thus, we have:
 ### Passive voice
 
 To avoid expressing who is doing the action, English sometimes use the passive
-voice, such as "the man was bitten". The English passive voice is used to
+voice, such as «the man was bitten». The English passive voice is used to
 emphasize what would normally be the object of a sentence by placing it in the
-subject position. You can add the preposition "by" to indicate who actually did
-the action ("the man was bitten by the targ"), but still emphasize that you are
+subject position. You can add the preposition «by» to indicate who actually did
+the action («the man was bitten by the targ»), but still emphasize that you are
 talking about a man being bitten and the targ is incidental. However, if you
 leave the preposition off, then it becomes a type of indefinite subject. If all
-I say is "the man was bitten" then who did the biting is left indefinite.
+I say is «the man was bitten» then who did the biting is left indefinite.
 
-As we indicated earlier, {loD choplu’pu’} would mean "someone has bitten the
-man", but it can also be translated into the English passive voice, "the man
-was bitten."
+As we indicated earlier, {loD choplu’pu’} would mean «someone has bitten the
+man», but it can also be translated into the English passive voice, «the man
+was bitten.»
 
 Note that in the passive voice, English reverses the position of the subject
 and object:
@@ -3010,20 +3016,20 @@ subject.
 
 ### {tu’lu’} «There is»
 
-Now you can also understand the forms {tu’lu’} for "there is" and {lutu’lu’}
+Now you can also understand the forms {tu’lu’} for «there is» and {lutu’lu’}
 «there are»: they are based on the verb {tu’} «find, observe».
 
-So {pa’ puq tu’lu’} «there is a child there» literally means "one finds a child
-there" or "a child is found there". And {pa’ puqpu’ lutu’lu’} «there are
-children there» literally means "one finds children there" or "children are
-found there".
+So {pa’ puq tu’lu’} «there is a child there» literally means «one finds a child
+there» or «a child is found there». And {pa’ puqpu’ lutu’lu’} «there are
+children there» literally means «one finds children there» or «children are
+found there».
 
 
 ### {-lu’} and {-laH}
 
 For reasons that make most sense to Klingon grammarians, it is not possible to
-combine the suffixes {-lu’} and {-laH} to create meanings such as "one can see
-me; I can be seen" or "one cannot find them; they cannot be found". {-lu’} and
+combine the suffixes {-lu’} and {-laH} to create meanings such as «one can see
+me; I can be seen» or «one cannot find them; they cannot be found». {-lu’} and
 {-laH} are both type 5 verb suffixes, so one or the other of those suffixes can
 be on a given verb but not both at once.
 
@@ -3046,55 +3052,55 @@ clauses joined to each other by conjunctions such as {’ej} «and» or {’ach}
 «but».
 
 This skill will teach you how Klingons do the equivalent of subordinate
-clauses—things such as, "I know that you have eaten my *gagh*," where the
-object of "know" is an entire clause including a verb, "you have eaten my
-*gagh*."
+clauses—things such as, «I know that you have eaten my gagh», where the object
+of «know» is an entire clause including a verb, «you have eaten my gagh».
 
 
 ### {’e’}
 
-English uses a subordinating conjunction "that" for this; Klingon uses a
+English uses a subordinating conjunction «that» for this; Klingon uses a
 special pronoun: {’e’}.
 
 (This is a complete and separate word not to be confused with the topic suffix
-{-’e’} that can be added to nouns, such as in "A is a B" sentences.)
+{-’e’} that can be added to nouns, such as in «A is a B» sentences.)
 
 This pronoun {’e’} refers to a preceding sentence, and can go into the object
 position of a following sentence (i.e. in front of the verb).
 
 For example, if one person says {qettaH mara} «Mara is running», another may
-reply, {’e’ vIlegh} «I see that», referring with {’e’} for to the previous
+reply, {’e’ vIlegh} «I see that», referring with {’e’} to the previous
 sentence, {qettaH mara}.
 
-More commonly, however, two clauses are spoken by the same speaker, "connected"
-with {’e’}. Usually, no punctuation is used after the first sentence.
+More commonly, however, the two clauses are spoken by the same speaker,
+“connected” with {’e’}. Usually, no punctuation is used after the first
+sentence.
 
-So you might also hear: {qettaH mara ’e’ vIlegh}—literally, "Mara is running, I
-see that", but equivalent to "I see that Mara is running."
+So you might also hear: {qettaH mara ’e’ vIlegh}—literally, «Mara is running. I
+see that», but equivalent to «I see that Mara is running.»
 
-Note that while in English, we might say, "I know that you ate my *gagh*," with
-the word "that" or, "I know you have eaten my *gagh*," without it, the Klingon
-sentence must contain the {’e’: qaghwIj DaSoppu’ ’e’ vISov}.
+Note that while in English, we might say, «I know that you ate my gagh,» with
+the word “«that»,” or, «I know you have eaten my gagh,» without it, the Klingon
+sentence must contain the {’e’}: {qaghwIj DaSoppu’ ’e’ vISov}.
 
-The only exception to this is the verb {neH} which means "to want"—here, the
+The only exception to this is the verb {neH} which means «to want»—here, the
 {’e’} is left out.
 
 For example, a Klingon might say {qagh vISop vIneH} «I want to eat
-*gagh*.»—literally: "I eat gagh. I want that."
+gagh.»—literally: «I eat gagh. I want that.»
 
-{’e’} counts as a singular object, so something like "We know that the
-prisoners eat" would be {Sop qama’pu’ ’e’ wISov}, with the prefix {wI-}
-indicating the subject is "we" and the object is "it".
+{’e’} counts as a singular object, so something like «We know that the
+prisoners eat» would be {Sop qama’pu’ ’e’ wISov}, with the prefix {wI-}
+indicating the subject is «we» and the object is «it».
 
-Similarly, "They want us to eat" would be {maSop luneH} (literally: "we eat;
-they want that"), with prefix {lu-} indicating subject "they" and object "it,
-that".
+Similarly, «They want us to eat» would be {maSop luneH} (literally: «we eat;
+they want that»), with prefix {lu-} indicating subject «they» and object «it,
+that».
 
 Don’t be misled by English grammar and use something like {Sop nuneH} to try to
-say "they want us—to eat". {nuneH} does mean, "they want us", but you can’t use
-it to try to say "they want us—to eat". In this type of sentence, "we" are
+say «they want us—to eat». {nuneH} does mean, «they want us», but you can’t use
+it to try to say «they want us—to eat». In this type of sentence, «we» are
 doing the eating and so must be represented by the prefix on {Sop}, instead of
-on {neH}. The Klingon grammatical object of "want" is the entire previous
+on {neH}. The Klingon grammatical object of «want» is the entire previous
 sentence (which for other verbs would be represented by the pronoun {’e’}, but
 {’e’} is omitted with the verb {neH}).
 
@@ -3106,8 +3112,8 @@ Another special pronoun is {net}.
 This acts similarly to {’e’}, but in addition indicates that the subject of the
 verb is indefinite or general.
 
-For example, {’e’ Sov} means "he/she knows that", but {net Sov} means "one
-knows that; it is known that". This is exactly equivalent to {’e’ Sovlu’}, but
+For example, {’e’ Sov} means «he/she knows that», but {net Sov} means «one
+knows that; it is known that». This is exactly equivalent to {’e’ Sovlu’}, but
 when you want to use {-lu’} with {’e’}, you should use {net} instead. For
 example: {val tlhInganpu’ net Sov} «It is known that Klingons are smart; One
 knows that Klingons are smart».
@@ -3120,27 +3126,27 @@ is used to indicate a strong desire or something that feels as if it necessary.
 It may imply a command or suggest a requirement, but it literally only
 expresses that the subject feels the object is very important to them. {poQ} is
 often used with {’e’} to indicate what one desires to happen. Most of the time,
-this course will translate {poQ} as "demand", but it is important to keep in
-mind that it is "demand" as in "require" or "need", not as in "to make a
-command". In English one doesn’t "demand" someone else, so when the object is a
-person, {poQ} is more often translated "need".
+this course will translate {poQ} as «demand», but it is important to keep in
+mind that it is «demand» as in «require» or «need», not as in «to make a
+command». In English one doesn’t «demand» someone else, so when the object is a
+person, {poQ} is more often translated «need».
 
 
 ### {jal}
 
-This unit introduces the verb {jal} which is usually translated as "imagine,
-envision" and is very often used to express hypothetical situations: {tlhIngan
-SoH ’e’ vIjal.} This sentence can be translated directly as "I imagine that you
-are a Klingon."
+This unit introduces the verb {jal} which is usually translated as «imagine,
+envision» and is very often used to express hypothetical situations: {tlhIngan
+SoH ’e’ vIjal.} This sentence can be translated directly as «I imagine that you
+are a Klingon.»
 
 In English, we often express hypothetical situations like this with a
-subjunctive mood conjugation, so we might instead say, "I imagine that you were
-a Klingon." In this course we will accept either the indicative mood (regular
+subjunctive mood conjugation, so we might instead say, «I imagine that you were
+a Klingon.» In this course we will accept either the indicative mood (regular
 past, present, or future) or the subjunctive mood.
 
-Commands using {’e’} with {jal} may sometimes translate the {’e’} as "if":
-{puvlaH targh ’e’ yIjal} ("Imagine if targs could fly.") In this course, we
-will accept either "that" or "if" in sentences like this.
+Commands using {’e’} with {jal} may sometimes translate the {’e’} as «if»:
+{puvlaH targh ’e’ yIjal} («Imagine if targs could fly.») In this course, we
+will accept either «that» or «if» in sentences like this.
 
 Note that the verb suffix {-chugh} also creates a kind of hypothetical
 situation. The difference is that a {-chugh} statement is used to indicate a
@@ -3150,7 +3156,6 @@ exist.
 
 
 ## Discuss science
-
 
 <div>[#Science-Vocabulary] Science Vocabulary <small title="179 bytes // 1540473471">1 · 2018-10-25</small><a href="https://www.duolingo.com/skill/kl/Science-Vocabulary/practice"></a></div>
 
@@ -3181,15 +3186,15 @@ Some words about weather and weather phenomena.
 
 Note that weather usually involves verbs in Klingon—for example, {SIS} «rain»
 is a verb (it rains, it is raining) and there is no specific word for the noun
-"rain".
+«rain».
 
 If you wanted to specify that a specific puddle, for example, was formed from
 rain and not some other source of water, you could call it {chal bIQ} «sky
-water», but that’s more of a description than a separate word for "rain".
+water», but that’s more of a description than a separate word for «rain».
 
-Note that English needs a dummy subject "it" with weather verbs (it is raining,
+Note that English needs a dummy subject «it» with weather verbs (it is raining,
 it snowed, etc.) but Klingon does not: {SIStaH, peD} etc. are quite sufficient.
-Don’t use {’oH} as there is no "it" there which "does the raining".
+Don’t use {’oH} as there is no «it» there which «does the raining».
 
 Serious weather predictions use the verb {’aq}, which indicates a kind of
 prediction that is carried out on the basis of science, research, or deductive
@@ -3218,8 +3223,8 @@ There are four of these: {-law’ -bej -ba’ -chu’}
 
 ### {-law’}
 
-The verbal suffix {-law’} indicates some degree of doubt—"it seems that…, I
-think that…, I suspect that…, apparently…".
+The verbal suffix {-law’} indicates some degree of doubt—«it seems that…, I
+think that…, I suspect that…, apparently…».
 
 For example, {ghunglaw’ puq} means "it seems that the child is hungry; I
 suspect that the child is hungry; the child is apparently hungry".
@@ -3228,22 +3233,22 @@ suspect that the child is hungry; the child is apparently hungry".
 ### {-bej}
 
 The verbal suffix {-bej} indicates a high degree of confidence. It can be
-translated as "certainly", "definitely", or "undoubtedly".
+translated as «certainly», «definitely», or «undoubtedly».
 
 
 ### {-ba’}
 
 The verbal suffix {-ba’} indicates that something is obvious.
 
-For example, {nepba’taH qama’} would mean "the prisoner is obviously lying".
+For example, {nepba’taH qama’} would mean «the prisoner is obviously lying».
 (Note the order of the suffixes: the type 6 suffix {-ba’} «obviously» comes
 before the type 7 aspect suffix {-taH} «-ing».)
 
 
 ### {-chu’}
 
-The verbal suffix {-chu’} can be translated as "clearly", "perfectly", or
-"completely", depending on the sentence.
+The verbal suffix {-chu’} can be translated as «clearly», «perfectly», or
+«completely», depending on the sentence.
 
 Note in this connection that the placement of the negative suffix {-be’}
 matters when there are multiple suffixes, as it acts on the one in front of it.
@@ -3253,8 +3258,8 @@ So {qayajlaHbe’chu’} ({qa-} «I-you», {yaj} «understand», {-laH} «can, a
 unable to understand you, i.e. the {-laHbe’} «not able» state is perfect or
 complete.
 
-On the other hand, {qayajlaHchu’be’} would mean something like "I can
-understand you, but not perfectly", i.e. the {-laH} «able» state is {-chu’be’}
+On the other hand, {qayajlaHchu’be’} would mean something like «I can
+understand you, but not perfectly», i.e. the {-laH} «able» state is {-chu’be’}
 «not perfect».
 
 These distinctions are sometimes a bit difficult to capture naturally in
@@ -3276,10 +3281,10 @@ verb may work better than an adjective.
 ### {-qoq}
 
 The suffix {-qoq} indicates that the noun is being used ironically or otherwise
-not with its literal meaning. "So-called" is usually a good translation. It’s
-similar to the practice of using "finger quotes".
+not with its literal meaning. «So-called» is usually a good translation. It’s
+similar to the practice of using “finger quotes”.
 
-For example, if someone is asking a question "for a friend", the listener might
+For example, if someone is asking a question “for a friend,” the listener might
 inquire about {jupqoqlI’} «your so-called friend» or «your “friend.”»
 
 
@@ -3290,9 +3295,9 @@ discussing is but suspects that it may be this noun.
 
 For example, if the speaker sees a humanoid figure in the distance and thinks
 it might be a Ferengi, but isn’t sure yet because he can’t see clearly enough,
-he might call say {verenganHey vIlegh}. "I see an apparent Ferengi" might be a
-translation, or perhaps a rewording to "I see what might be a Ferengi" or "I
-think I see a Ferengi" or "I suspect that it’s a Ferengi that I see" might
+he might call say {verenganHey vIlegh}. «I see an apparent Ferengi» might be a
+translation, or perhaps a rewording to «I see what might be a Ferengi» or «I
+think I see a Ferengi» or «I suspect that it’s a Ferengi that I see» might
 capture the sense of the Klingon sentence better.
 
 
@@ -3314,7 +3319,6 @@ without a doubt that it is, indeed, a Ferengi, he may use the word
 
 ## Talk about size
 
-
 <div>[#Lengths-and-Measurements] Lengths and Measurements <small title="2571 bytes // 1553371979">4 · 2019-03-23</small><a href="https://www.duolingo.com/skill/kl/Lengths-and-Measurements/practice"></a></div>
 
 This skill introduces various words for measuring things and saying how long or
@@ -3323,9 +3327,9 @@ wide etc. they are.
 
 ### {’ab}
 
-The word {’ab} means specifically "to have a height of …", but due to a
+The word {’ab} means specifically «to have a height of …», but due to a
 difference in how English and Klingon measures things, it may sometimes be
-translated as "to have a length of …".
+translated as «to have a length of …».
 
 For something that effectively has only one measurement (in other words, it has
 a significantly greater measure in one dimension than in the other two—such as
@@ -3337,8 +3341,8 @@ end, instead of stretched out along a surface.
 
 ### {juch} and {’aD}
 
-The word {juch} means "to have a width of …" and the word {’aD} means "to have
-a length of …"
+The word {juch} means «to have a width of …» and the word {’aD} means «to have
+a length of …»
 
 For something that effectively has only two measurements (in other words, one
 of the dimensions is negligible compared to the other two—such as a lid or a
@@ -3348,14 +3352,14 @@ standing up on the edge.
 
 When measurements are given for all three dimensions of a being or thing, then
 the actual orientation is considered and {’ab} is used for height, {juch} is
-used for width, and {’aD} is used for length (sometimes called "depth" in
+used for width, and {’aD} is used for length (sometimes called «depth» in
 English, but only for depth going back, {’aD} is never used for depth under a
 surface).
 
 
 ### {Saw’}
 
-The word {Saw’} means "to have a depth of …" and is used for giving the
+The word {Saw’} means «to have a depth of …» and is used for giving the
 measurement of depth under a surface.
 
 
@@ -3489,7 +3493,6 @@ actually insert a {qaghwI’} between the two syllables in such a case.
 
 ## Talk about music
 
-
 <div>[#Music] Music <small title="99 bytes // 1540473471">1 · 2018-10-25</small><a href="https://www.duolingo.com/skill/kl/Music/practice"></a></div>
 
 This skill talks about music.
@@ -3526,30 +3529,30 @@ will be explained here.
 ### Addition
 
 A mathematical expression such as {4 + 3 = 7} is read in English in pretty much
-the same order as it is written down: "four plus three equals seven".
+the same order as it is written down: «four plus three equals seven».
 
 Klingon uses the verbs {boq} «ally with» and {chen} «form; take shape» in such
-sentences and would read that as {wej boq loS; chen Soch}—literally, "four
-allies with three; seven forms".
+sentences and would read that as {wej boq loS; chen Soch}—literally, «four
+allies with three; seven forms».
 
 In other words, one number allies with another one, and the result is that a
 new number (the result) takes shape, comes into being, forms.
 
 In such mathematical expressions, the numbers are considered singular. For
 example, {8 + 1 = 9} is {wa’ boq chorgh; chen Hut}, where the verb {boq} is in
-the form for "singular subject, singular object"—it does not take the prefix
-{lu-} for "plural subject, singular object" since the {chorgh} in that
-expression is considered singular: a "pure number" rather than a count of
+the form for *singular subject, singular object*—it does not take the prefix
+{lu-} for *plural subject, singular object* since the {chorgh} in that
+expression is considered singular: a “pure number” rather than a count of
 multiple things.
 
 
 ### Subtraction
 
 Subtraction proceeds in a similar manner to addition, using the verb {boqHa’}
-«dis-ally» or "dissociate from".
+«dis-ally» or «dissociate from».
 
 For example, {13 − 8 = 5} would be read as {wa’maH wej boqHa’ chorgh; chen
-vagh}—literally, "eight dissociates from thirteen; five forms."
+vagh}—literally, «eight dissociates from thirteen; five forms.»
 
 
 ### Big numbers
@@ -3586,12 +3589,12 @@ cha’} «four times, eight allies with itself; thirty-two forms.»
 
 Division involves the verb {boqHa’’egh} «dissociates from itself»—for example,
 {27 ÷ 3 = 9} is expressed as {wejlogh boqHa’’egh cha’maH Soch; chen Hut} or
-literally, "twenty-seven dissociates from itself three times; nine forms."
+literally, «twenty-seven dissociates from itself three times; nine forms.»
 
 
 #### Percentage
 
-A percentage may be expressed by following a number with {vatlhvI’}. "1%" may
+A percentage may be expressed by following a number with {vatlhvI’}. «1%» may
 be expressed as {wa’ vatlhvI’}. We do not know of a way to express other
 fractions.
 
@@ -3634,12 +3637,12 @@ cha’} «four times, eight allies with itself; thirty-two forms.»
 
 Division involves the verb {boqHa’’egh} «dissociates from itself»—for example,
 {27 ÷ 3 = 9} is expressed as {wejlogh boqHa’’egh cha’maH Soch; chen Hut} or
-literally, "twenty-seven dissociates from itself three times; nine forms."
+literally, «twenty-seven dissociates from itself three times; nine forms.»
 
 
 #### Percentage
 
-A percentage may be expressed by following a number with {vatlhvI’}. "1%" may
+A percentage may be expressed by following a number with {vatlhvI’}. «1%» may
 be expressed as {wa’ vatlhvI’}. We do not know of a way to express other
 fractions.
 -->
@@ -3654,8 +3657,8 @@ fractions.
 
 <div>[#Relative-clauses] Relative clauses <small title="3785 bytes // 1580420878">5 · 2020-01-31</small><a href="https://www.duolingo.com/skill/kl/Relative-clauses/practice"></a></div>
 
-This skill teaches how to form relative clauses such as "the book which I am
-reading" or "the man who is guarding us".
+This skill teaches how to form relative clauses such as «the book which I am
+reading» or «the man who is guarding us».
 
 
 ### {-bogh}
@@ -3667,9 +3670,9 @@ which I am reading», and from {nu’avtaH loD} «the man is guarding us», we g
 {nu’avtaHbogh loD} «the man who is guarding us».
 
 Such a relative clause forms a noun phrase which can then serve as the subject
-or object of a main clause—for example, "Mara is looking for [the book which I
-am reading]", {paq vIlaDtaHbogh nej mara} or "[The man who is guarding us]
-refuses to fall asleep" {QongchoHQo’ nu’avtaHbogh loD}.
+or object of a main clause—for example, «Mara is looking for [the book which I
+am reading]», {paq vIlaDtaHbogh nej mara} or «[The man who is guarding us]
+refuses to fall asleep» {QongchoHQo’ nu’avtaHbogh loD}.
 
 
 ### Head Nouns
@@ -3680,15 +3683,15 @@ that clause is the thing being referred to.
 
 If, on the other hand, a clause has both an explicit subject and an explicit
 object, then adding {-bogh} to the verb does not make it clear whether the
-subject or the object of that clause is the "head noun" (i.e. the one intended
-to be relativized). For example, {paq ghajbogh be’} can either mean "the book
-which the woman has" or "the woman who has the book".
+subject or the object of that clause is the *head noun* (i.e. the one intended
+to be relativized). For example, {paq ghajbogh be’} can either mean «the book
+which the woman has» or «the woman who has the book».
 
 Context may make it clear which meaning is intended, but if you want to be more
 specific, you can use the type 5 noun suffix {-’e’} on the head noun which you
-want to "extract" or relativise; thus {paq’e’ ghajbogh be’} is explicitly "the
-book which the woman has" and {paq ghajbogh be’’e’} is explicitly "the woman
-who has the book".
+want to “extract” or relativise; thus {paq’e’ ghajbogh be’} is explicitly «the
+book which the woman has» and {paq ghajbogh be’’e’} is explicitly «the woman
+who has the book».
 
 This use of the type 5 noun suffix {-’e’} is related to other uses like topic,
 focus, or emphasis, but does not typically indicate any of those things when
@@ -3711,17 +3714,17 @@ sentence.
 
 ### Multiple Adjectives
 
-Note that when using adjectival verbs like {chu’} ("be new"), using {-bogh} for
+Note that when using adjectival verbs like {chu’} («be new»), using {-bogh} for
 a relative clause has basically the same meaning as placing the adjectival verb
-after the noun. The noun phrases {paq chu’} ("a new book") and {chu’bogh paq}
-("a book which is new") effectively mean the same thing.
+after the noun. The noun phrases {paq chu’} («a new book») and {chu’bogh paq}
+(«a book which is new») effectively mean the same thing.
 
 Relative clauses using {-bogh} are a good way to add additional adjectives to a
 noun. We are not allowed to put two adjectival verbs after a noun, so we cannot
 say *{paq QaQ chu’} for «a good new book». Instead, we can use the {-bogh}
-suffix on one of the verbs to create a more complex noun phrase: <br>{QaQbogh
-paq chu’} «a new book that is good» or <br>{chu’bogh paq QaQ} «a good book that
-is new»
+suffix on one of the verbs to create a more complex noun phrase:
+<br>{QaQbogh paq chu’} «a new book that is good» or
+<br>{chu’bogh paq QaQ} «a good book that is new»
 
 
 ## Discuss fingers and toes
@@ -3732,7 +3735,7 @@ is new»
 ### Left and right
 
 Two new words here are {poS} «left side» and {nIH} «right side». These are
-nouns, so "on the left side" would be {poSDaq}, for example.
+nouns, so «on the left side» would be {poSDaq}, for example.
 
 
 ### Fingers and toes
@@ -3751,7 +3754,7 @@ touched with that finger or toe, similar to the English usage of «to thumb a
 switch» = «to flip a switch using the thumb».
 
 If the verb has no object, but there is a noun with the locative suffix {-Daq},
-then the meaning of the finger/toe verbs is "point"—for example, {lurvengDaq
+then the meaning of the finger/toe verbs is «point»—for example, {lurvengDaq
 jISIq} «I ‘indexfinger’ at Lurveng» would mean «I point at Lurveng with my
 index finger».
 
@@ -3790,8 +3793,8 @@ coincidental.)*
 The names of the fingers and toes are derived from the verbs with the agent
 suffix {-wI’}.
 
-Thus a thumb is a {SenwI’}—literally, a "thumb-er" or "thing which thumbs" or
-"thing which is used in a thumb-like manner"—an index finger is a {SIqwI’}, and
+Thus a thumb is a {SenwI’}—literally, a «thumb-er» or «thing which thumbs» or
+«thing which is used in a thumb-like manner»—an index finger is a {SIqwI’}, and
 so on.
 
 -------------------------------------------------------------------------------
@@ -3999,19 +4002,17 @@ Various vocabulary connected with buildings and their contents.
 
 ## Talk about love
 
-
 <div>[#Love] Love <small title="379 bytes // 1540473471">1 · 2018-10-25</small><a href="https://www.duolingo.com/skill/kl/Love/practice"></a></div>
 
 A handful of words related to love, marriage, and pregnancy.
 
-A note on {tlhogh}: this can be used either as a noun—meaning "marriage"—or as
-a verb—meaning "to marry (someone)", as a gender-neutral variant of {Saw} (what
+A note on {tlhogh}: this can be used either as a noun—meaning «marriage»—or as
+a verb—meaning «to marry (someone)», as a gender-neutral variant of {Saw} (what
 a man does when he marries someone) and {nay} (what a woman does when she
 marries someone).
 
 
 ## Describe home life
-
 
 <div>[#Home-Life] Home Life <small title="115 bytes // 1540473471">1 · 2018-10-25</small><a href="https://www.duolingo.com/skill/kl/Home-Life/practice"></a></div>
 
@@ -4025,7 +4026,6 @@ Internet, and Christmas wish lists.
 
 
 ## Discuss health
-
 
 <div>[#Health-1] Health 1 <small title="49 bytes // 1540473471">1 · 2018-10-25</small><a href="https://www.duolingo.com/skill/kl/Health-1/practice"></a></div>
 
@@ -4045,8 +4045,8 @@ also stage magic, the illusionist’s craft.
 Regardless of whether you believe that real magic and proper wizards exist,
 Klingons have words for such concepts.
 
-"Magic" is {’IDnar}, and a wizard or sorceror is a {’IDnar pIn’a’} (literally,
-a "master of magic") or a {reSwI’} (literally, a "spellcaster").
+«Magic» is {’IDnar}, and a wizard or sorceror is a {’IDnar pIn’a’} (literally,
+a «master of magic») or a {reSwI’} (literally, a «spellcaster»).
 
 A magic spell is a {tlheH}, and the verb for them is {reS} (cast). It can be
 used either with an object ({tlheH reS ’IDnar pIn’a’} «the wizard cast a
@@ -4055,15 +4055,15 @@ spell») or without ({reStaH ’IDnar pIn’a’} «the wizard is casting spells
 
 ### Stage magic
 
-In English, "magic" can also be used to refer to what an illusionist does
+In English, «magic» can also be used to refer to what an illusionist does
 during a magic show—pretend to violate the laws of physics through
 misdirection, sleight of hand, etc. rather than through supernatural powers.
 
 To do so is to {mIn yuq} «outwit the eyes»; a stage magician or illusionist can
 thus be called a {mIn yuqwI’}.
 
-Another word for a stage magician is {’IDnar lIlwI’}, literally a "magic
-simulator"—to {lIl} is to simulate something or impersonate someone (but
+Another word for a stage magician is {’IDnar lIlwI’}, literally a «magic
+simulator»—to {lIl} is to simulate something or impersonate someone (but
 without attempt to defraud). {’IDnar lIl} (literally, to simulate magic) is
 another verb for what a stage magician does.
 
@@ -4072,8 +4072,8 @@ another verb for what a stage magician does.
 
 A final, humorous note: when Marc Okrand passed on the information about these
 magic-related words from his Klingon informant, Maltz, he added a post-script
-saying that *My favorite sentence at the moment is "They are (continuously and
-with some sort of goal in mind) impersonating you (plural)."*
+saying that “My favorite sentence at the moment is «They are (continuously and
+with some sort of goal in mind) impersonating you (plural).»”
 
 Or in other words: {lIlIllI’}.
 
@@ -4106,7 +4106,6 @@ hand-to-hand combat.
 
 ## Turn verbs into nouns
 
-
 <div>[#Nominalization] Nominalization <small title="2480 bytes // 1576501403">2 · 2019-12-16</small><a href="https://www.duolingo.com/skill/kl/Nominalization/practice"></a></div>
 
 As you become more and more experienced in speaking Klingon, you may discover
@@ -4124,8 +4123,8 @@ Back-translated: «Because the patient couldn’t sleep, she/he became sick.»
 
 However, every now and then, it is useful to be able to describe an action or a
 state using a noun rather than a verb. For example, what if you wish to say
-"his so-called sleeplessness", or "the illness that was caused by her
-sleeplessness"?
+«his so-called sleeplessness», or «the illness that was caused by her
+sleeplessness»?
 
 This is where the useful—but rarely heard—nominalization suffix {-ghach} comes
 in. This suffix takes a verb which has at least one other verb suffix and turns
@@ -4189,7 +4188,6 @@ beyond the scope of this course.
 
 ## Talk about art
 
-
 <div>[#Culture] Culture <small title="2768 bytes // 1610636699">2 · 2021-01-14</small><a href="https://www.duolingo.com/skill/kl/Culture/practice"></a></div>
 
 This skill teaches vocabulary related to culture and the arts. There is no new
@@ -4200,30 +4198,30 @@ greater detail.
 ### {meHghem}
 
 It’s been suggested that there is no single word in Klingon that corresponds to
-the English word "art". …but then again, that is perhaps to be expected, seeing
+the English word «art». …but then again, that is perhaps to be expected, seeing
 as it can be difficult enough to find two English-speakers who agree entirely
-on what exactly "art" is. Are video games art? Is twerking art? Are these Skill
+on what exactly «art» is. Are video games art? Is twerking art? Are these Skill
 Tips art? I’m not sure the answer is any clearer in Klingon than in English.
 
-The Klingon word {meHghem} has been variously translated as "art", "the arts"
-and "culture", and encompasses a broad range of creative expression, including
+The Klingon word {meHghem} has been variously translated as «art», «the arts»
+and «culture», and encompasses a broad range of creative expression, including
 the visual arts (such as sculpture and painting) as well as music, drama,
 poetry, theatre and more.
 
 In discussing Earth culture, the phrase {meHghem Qat} is sometimes used to
-refer to "pop culture".
+refer to «pop culture».
 
 
 ### {vIqraq}
 
 Although most people will agree that painting is a form of art, many will also
 argue that not *every* painting is a work of art. Indeed, no visit to a modern
-art exhibit would be complete without somebody exclaiming *"You call this art?
-My five-year-old could have made this!"*
+art exhibit would be complete without somebody exclaiming «You call this art?
+My five-year-old could have made this!»
 
-The word {vIqraq} has been variously translated as "work of art", "artwork",
-"artifact", "gizmo", "gadget" and more, but a more general translation would be
-"something that is manufactured/made".
+The word {vIqraq} has been variously translated as «work of art», «artwork»,
+«artifact», «gizmo», «gadget» and more, but a more general translation would be
+«something that is manufactured/made».
 
 As such, it could describe a quilt, a machine, a necklace, a flower
 arrangement, a piece of furniture and much more. It also encompasses any
@@ -4233,8 +4231,8 @@ five-year-old.
 
 ### {nagh beQ}
 
-The phrase {nagh beQ} is commonly translated as "picture" or "painting".
-However, broken down, it literally means "flat stone". This phrase originally
+The phrase {nagh beQ} is commonly translated as «picture» or «painting».
+However, broken down, it literally means «flat stone». This phrase originally
 referred to stone panels with engraved pictures on them, but this usage has
 since been expanded to encompass a much larger range of flat images.
 
@@ -4257,7 +4255,6 @@ obviously {vIqraqmey}.»
 
 
 ## Discuss earth topics
-
 
 <div>[#Earth-Life] Earth Life <small title="482 bytes // 1540473471">1 · 2018-10-25</small><a href="https://www.duolingo.com/skill/kl/Earth-Life/practice"></a></div>
 
